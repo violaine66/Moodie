@@ -1,0 +1,14 @@
+<div class="container mt-5 text-center">
+  <div class="col">
+    <div class="row">
+      <%= month_calendar events: @moods do  |date, moods| %>
+        <%= date.day %>
+        <% moods.each do |mood| %>
+        <div>
+          <%= mood.value %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
