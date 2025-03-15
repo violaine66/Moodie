@@ -20,10 +20,13 @@ class MoodsController < ApplicationController
     @moods = current_user.moods.latest_per_day
   end
 
+  def show
+    redirect_to moods_path
+  end
+  
   private
 
   def mood_params
     params.require(:mood).permit(:value, :date)  # Permettre l'envoi des champs :value et :date depuis le formulaire
   end
 end
-
