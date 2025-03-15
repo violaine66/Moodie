@@ -1,14 +1,22 @@
 <div class="container mt-5 text-center">
   <div class="col">
     <div class="row">
-      <%= month_calendar events: @moods do  |date, moods| %>
-        <%= date.day %>
-        <% moods.each do |mood| %>
-        <div>
-          <%= mood.value %>
+      <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
+        <div class="day-container">
+          <%= date.day %>
+          <% moods.each do |mood| %>
+            <% if mood.date.to_date == date %>  <!-- Comparaison avec la date du calendrier -->
+              <div class="mood-circle" style="background-color: <%= mood.color %>;"></div>
+            <% end %>
+          <% end %>
         </div>
-        <% end %>
       <% end %>
     </div>
   </div>
 </div>
+
+
+
+<%# Dans la vue, tu utilises la variable @events pour afficher les humeurs sous forme de cercles colorés : %>
+<%# Contrôleur : Nous récupérons toutes les humeurs du mois courant et les transformons en événements au format attendu par simple_calendar.
+Vue : Dans la vue, nous affichons chaque jour du mois et ajoutons un petit cercle coloré sous les jours correspondant à une humeur. %>
