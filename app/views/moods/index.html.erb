@@ -3,12 +3,15 @@
     <div class="row">
       <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
         <div class="day-container">
-          <%= date.day %>
-          <% moods.each do |mood| %>
-            <% if mood.date.to_date == date %>  <!-- Comparaison avec la date du calendrier -->
-              <div class="mood-circle" style="background-color: <%= mood.color %>;"></div>
+          <div class="day-number"><%= date.day %></div>
+          <div class="mood-circle-wrapper">
+            <% if moods.any? %>
+              <% last_mood = moods.last %>  <%# Prend la dernière humeur enregistrée %>
+              <div class="mood-circle" style="background-color: <%= last_mood.color %>;"></div>
+            <% else %>
+              <div class="mood-circle empty"></div> <%# Cercle invisible mais qui prend de la place %>
             <% end %>
-          <% end %>
+          </div>
         </div>
       <% end %>
     </div>
