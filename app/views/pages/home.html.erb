@@ -2,6 +2,8 @@
   <h1>Bonjour !</h1>
       <% if user_signed_in? %>
       <p>Votre email : <%= current_user.email %></p>
+      <p><%= link_to "Calendrier émotionnel", moods_path %></p>
+      <p><%= link_to "Comment vas tu aujourdhui'?", new_mood_path %></p>
       <% else %>
       <p><a href="<%= new_user_session_path %>">Connectez-vous</a> pour voir votre email.</p>
     <% end %>
