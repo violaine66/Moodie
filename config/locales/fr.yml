@@ -1,4 +1,10 @@
 fr:
+  devise:
+    sessions:
+      signed_in: 'Connecté avec succès.'
+      signed_out: 'Déconnecté avec succès.'
+      signed_up: 'Inscrit avec succès.'
+
   date:
     month_names: [~, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
     abbr_month_names: [~, Janv, Févr, Mars, Avr, Mai, Juin, Juil, Août, Sept, Oct, Nov, Déc]
