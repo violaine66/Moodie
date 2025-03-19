@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :moods
+  has_many :moods, dependent: :destroy
   has_many :journal_posts
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

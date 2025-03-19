@@ -1,0 +1,16 @@
+
+<div class="container">
+  <h1>Posts</h1>
+  <% @journal_posts.each do |post| %>
+    <div>
+      <%= post.date %>
+    </div>
+    <div>
+      <%= truncate(post.content, length: 40, separator: ' ') %>
+    </div>
+    <%= link_to "Voir", journal_post_path(post) %>
+  <% end %>
+  <div>
+    <%= link_to "Créer un Post", new_journal_post_path %>
+  </div>
+</div>
