@@ -4,7 +4,10 @@ fr:
       signed_in: 'Connecté avec succès.'
       signed_out: 'Déconnecté avec succès.'
       signed_up: 'Inscrit avec succès.'
-      name: "nom"
+    failure:
+      user:
+        not_found_in_database: "Utilisateur non trouvé dans la base de données"
+      not_found_in_database: "Identifiants invalides"
 
   date:
     month_names: [~, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
