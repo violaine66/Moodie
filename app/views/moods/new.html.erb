@@ -1,75 +1,44 @@
-<div class="container mt-5">
+<div class="container mt-5" data-controller="color-on-moods">
   <div class="row justify-content-center">
     <div class="col-10 col-lg-5">
       <h1 class="mb-2">Comment vas-tu aujourd'hui?</h1>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class=" col-10 col-lg-5 ">
-        <% if @mood.errors.any? %>
-            <div class="alert alert-danger">
-              <ul>
-                <% @mood.errors.full_messages.each do |message| %>
-                  <li><%= message %></li>
-                <% end %>
-              </ul>
-            </div>
-        <% end %>
+    <div class="col-10 col-lg-5">
+      <% if @mood.errors.any? %>
+        <div class="alert alert-danger">
+          <ul>
+            <% @mood.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
 
-        <%= form_with model: @mood, local: true do |form| %>
-          <div class="form-group mt-4">
-            <%= form.label :value, "Sélectionne ton humeur" %>
-              <div class="slider-container">
-                <%= form.text_field :value, type: 'range', min: 1, max: 6, step: 1, value: @mood.value, class: "form-control-range", id: "mood-slider" %>
-              </div>
-              <!-- Affichage du cercle de couleur -->
-              <div id="color-display" class="mt-2" style="width: 50px; height: 50px; border-radius: 50%; background-color: <%= @mood.color %>;"></div>
+      <%= form_with model: @mood, local: true do |form| %>
+        <div class="form-group mt-4">
+          <%= form.label :value, "Sélectionne ton humeur" %>
+          <div class="slider-container">
+            <%= form.text_field :value, type: 'range', min: 1, max: 6, step: 1, value: @mood.value,
+                class: "form-control-range", id: "mood-slider",
+                data: { color_on_moods_target: "slider", action: "input->color-on-moods#updateColor" } %>
           </div>
+          <!-- Cercle de couleur contrôlé par Stimulus -->
+          <div data-color-on-moods-target="colorDisplay" class="mt-2"
+              style="width: 50px; height: 50px; border-radius: 50%; background-color: <%= @mood.color %>;">
+          </div>
+        </div>
 
-          <div class="form-group mt-5">
-            <%= form.label :date, "Date" %>
-            <%= form.date_field :date, value: Date.today, class: "form-control" %>  <!-- Valeur par défaut à la date du jour -->
-          </div>
-          <div class="form-group mt-3">
-            <%= form.submit "Enregistrer", class: "btn btn-primary" %>
-          </div>
-        <% end %>
+        <div class="form-group mt-5">
+          <%= form.label :date, "Date" %>
+          <%= form.date_field :date, value: Date.today, class: "form-control" %>
+        </div>
+
+        <div class="form-group mt-3">
+          <%= form.submit "Enregistrer", class: "btn btn-primary" %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
-
-<script>
-  // JavaScript pour changer la couleur en fonction de la valeur du slider
-  const slider = document.getElementById('mood-slider');
-  const colorDisplay = document.getElementById('color-display');
-
-  slider.addEventListener('input', function() {
-    const value = parseInt(slider.value);
-    let color = '';
-
-    // Définir la couleur en fonction de la valeur du curseur
-    switch(value) {
-      case 1:
-        color =  'rgb(66, 21, 163)';
-        break;
-      case 2:
-        color = 'rgb(47, 120, 246)';
-        break;
-      case 3:
-        color = 'rgb(210, 224, 251)';
-        break;
-      case 4:
-        color = 'rgb(168, 230, 207)';
-        break;
-      case 5:
-        color = 'rgb(250, 255, 197)';
-        break;
-      case 6:
-        color = 'rgb(255, 209, 102)';
-        break;
-    }
-
-    // Appliquer la couleur
-    colorDisplay.style.backgroundColor = color;
-  });
-</script>
