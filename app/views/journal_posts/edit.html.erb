@@ -1,0 +1,15 @@
+<%= form_with model: @journal_post, local: true do |form| %>
+  <div>
+    <%= form.label :date %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div>
+    <%= form.submit "Mettre à jour" %>
+  </div>
+<% end %>

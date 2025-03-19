@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container">
+  <h2>Post du <%= @journal_post.date %></h2>
+  <p><%= @journal_post.content %></p>
+  </div>
+  <div class="container">
+    <%= link_to "Supprimer",
+      journal_post_path(@journal_post),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+    %>
+  </div>
+  <div class="container">
+    <%= link_to "Modifier",
+      edit_journal_post_path(@journal_post) %>
+  </div>
+  <div>
+    <%= link_to "Retour au Journal", journal_posts_path %>
+  </div>
+</div>
