@@ -12,4 +12,9 @@ Rails.application.routes.draw do
   # root "posts#index"
   resources :moods
   resources :journal_posts
+  resources :ressources do
+    collection do
+      get :pres_de_chez_moi
+    end
+  end 
 end

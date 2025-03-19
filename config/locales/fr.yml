@@ -4,6 +4,7 @@ fr:
       signed_in: 'Connecté avec succès.'
       signed_out: 'Déconnecté avec succès.'
       signed_up: 'Inscrit avec succès.'
+      name: "nom"
 
   date:
     month_names: [~, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
