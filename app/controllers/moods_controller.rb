@@ -23,7 +23,7 @@ class MoodsController < ApplicationController
   def show
     redirect_to moods_path
   end
-  
+
   private
 
   def mood_params
