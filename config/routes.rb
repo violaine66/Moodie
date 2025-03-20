@@ -16,5 +16,8 @@ Rails.application.routes.draw do
     collection do
       get :pres_de_chez_moi
     end
-  end 
+  end
+
+  post 'chat', to: 'chat#create'
+  get 'chat', to: 'chat#index'
 end
