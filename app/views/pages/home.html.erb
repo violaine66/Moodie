@@ -2,11 +2,7 @@
   <h1>Bonjour!</h1>
       <% if user_signed_in? %>
       <p> Bonjour <%= current_user.name %> </p>
-      <p><%= link_to "Calendrier émotionnel", moods_path %></p>
-
-      <p><%= link_to "Humeur du jour ?", new_mood_path %></p>
-      <p><%= link_to "Journal", journal_posts_path %></p>
-
+      <%= link_to "Accéder au Menu", menu_path, class: "btn btn-primary" %>
       <% else %>
       <p><a href="<%= new_user_session_path %>">Connectez-vous</a> pour voir votre email.</p>
     <% end %>
