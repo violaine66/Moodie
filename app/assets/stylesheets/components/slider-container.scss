@@ -1,9 +1,13 @@
-.new-mood{
+.new-mood {
   background-color: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 100%;
 }
+
+
 #mood-slider{
   width: 100%;
 }
