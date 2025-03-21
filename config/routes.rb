@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "pages#home"
+  root to: "moods#new"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   get '/menu', to: 'pages#menu', as: :menu

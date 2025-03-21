@@ -1,12 +1,8 @@
 <div class="container mt-5" data-controller="color-on-moods">
+  <div class="row justify-content-center">
+    <div class="col-10 col-lg-5">
       <div class="new-mood">
-          <div class="row justify-content-center">
-        <div class="col-10 col-lg-5">
-          <h1 class="mb-2 text-center">Comment vas-tu aujourd'hui <%= current_user.name %> ?</h1>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-10 col-lg-5">
+        <h1 class="mb-2 text-center">Comment vas-tu aujourd'hui <%= current_user.name %> ?</h1>
           <% if @mood.errors.any? %>
             <div class="alert alert-danger">
               <ul>
@@ -16,7 +12,6 @@
               </ul>
             </div>
           <% end %>
-
           <%= form_with model: @mood, local: true do |form| %>
             <div class="form-group mt-4">
               <%= form.label :value, "Sélectionne ton humeur" %>
@@ -32,22 +27,21 @@
                 </div>
                 <p data-color-on-moods-target="moodText"><%= @mood.value %></p>
               </div>
-
             </div>
             <div class ="d-flex justify-content-center align-items-center align-content-center">
-                <div class="form-group mt-4">
+              <div class="form-group mt-4">
                 <%= form.label :date, "Date" %>
                 <%= form.date_field :date, value: Date.today %>
               </div>
               <div class="form-group mt-3 align-self-end">
                 <%= form.submit "Enregistrer", class: "btn btn-primary ms-3" %>
               </div>
-
-        </div>
-          </div>
-          <% end %>
-        </div>
-
+              <% end %>
+            </div>
+      </div>
+      <div class="menu mt-5 text-center">
+        <%= link_to "Menu", menu_path, class:"btn-menu" %>
+      </div>
+    </div>
   </div>
-
-  </div>
+</div>
