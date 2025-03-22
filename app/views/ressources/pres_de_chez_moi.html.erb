@@ -1,0 +1,22 @@
+<div class="ressources-container mt-3 text-center">
+
+  <h1>A proximité</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <% @pres_de_chez_moi.each do |ressource| %>
+        <div class="card m-4">
+          <div class="d-flex flex-row">
+            <img src="https://maisondesados-sdn.fr/wp-content/themes/aka_theme/libs/images/logo_mda_rond.png" alt="" style="height: 140px;">
+            <div class="card-body">
+              <h5 class="card-title"><%= ressource.title %></h5>
+              <p class="card-text small"><%= ressource.description %></p>
+              <%= link_to "Voir site", ressource.url, class: "btn btn-secondary", target: "_blank" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
