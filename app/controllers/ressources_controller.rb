@@ -2,6 +2,7 @@ class RessourcesController < ApplicationController
   before_action :set_ressources, only: %i[index pres_de_chez_moi]
 
   def index
+    @ressources.all
   end
 
   def pres_de_chez_moi
