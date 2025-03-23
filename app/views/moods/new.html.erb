@@ -1,12 +1,14 @@
 <div class="banner d-flex" >
   <div class="container align-self-center">
     <h1 class= "text-center"> Moodie</h1>
-    <p class="text-end">Plus qu'une appli, un ami.</p>
+    <p class="text-end">Plus qu'une appli, un ami</p>
+
   </div>
 </div>
 <div class="container" id="citation-container">
   <div class="row">
     <div class="col-6 col-lg-3">
+
        <div class="citation text-center">
         “La vie, ce n'est pas d'attendre que les orages passent,
         c'est d'apprendre à danser sous la pluie.”
@@ -34,8 +36,8 @@
     </div>
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-10 col-lg-5">
+  <div class="row justify-content-start">
+    <div class="col-10 col-lg-7">
       <div class="new-mood ">
         <div class="form">
               <%= form_with model: @mood, local: true do |form| %>
@@ -49,33 +51,40 @@
               <!-- Cercle de couleur contrôlé par Stimulus -->
               <div class="d-flex align-items-center justify-content-center mt-3">
                 <div class="d-flex justify-content-center me-5 mt-3">
-              <img data-color-on-moods-target="emotji" src= "<%= "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png" %> "width="60" height="60" alt="Emotji">
+              <img data-color-on-moods-target="emotji" src= "<%= "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png" %> "width="70" height="70" alt="Emotji">
              </div>
                 <div data-color-on-moods-target="colorDisplay" class="mt-2 me-3"
                   style="width: 50px; height: 50px; border-radius: 50%; background-color: <%= @mood.color %>;">
                 </div>
                 <p data-color-on-moods-target="moodText"><%= @mood.value %></p>
               </div>
-
-
-            </div>
-
-
-            <div class ="d-flex justify-content-center align-items-center align-content-center">
-              <div class="form-group mt-4">
-                <%= form.label :date, "Date" %>
-                <%= form.date_field :date, value: Date.today %>
-              </div>
-              <div class="form-group mt-3 align-self-end">
-                <%= form.submit "Enregistrer", class: "btn-new-mood ms-3" %>
-              </div>
-              <% end %>
             </div>
           </div>
       </div>
-      <div class="menu mt-5 text-center">
-        <%= link_to "Menu", menu_path, class:"btn-menu" %>
+     </div>
+  </div>
+
+
+  <div class="row justify-content-center">
+    <div class="col-5 col-lg-3">
+      <div class="new-mood-submit d-flex justify-content-center align-items-center">
+
+          <div class="form-group ">
+         
+            <%= form.date_field :date, value: Date.today %>
+          </div>
+          <div class="form-group ">
+            <%= form.submit "Enregistrer", class: "btn-new-mood ms-3" %>
+          </div>
+          <% end %>
+
       </div>
     </div>
   </div>
+
+
+
+   <div class="menu mt-5 text-center">
+        <%= link_to "Menu", menu_path, class:"btn-menu" %>
+      </div>
 </div>
