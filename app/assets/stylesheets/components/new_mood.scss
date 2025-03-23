@@ -5,14 +5,27 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   width: 100%;
   max-width: 100%;
-  font-family: "Quicksand", sans-serif;
+  margin-top: 30px;
   position:relative;
   margin-top: 30px;
+  border: solid 0.8px black;
 }
 .new-mood h1{
   font-family: "Quicksand", sans-serif;
 
 }
+.new-mood-submit {
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-left: 80px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px; /* Réduire la largeur */
+  font-family: "Quicksand", sans-serif;
+  border: transparent 0.8px rgb(83, 79, 79);
+}
+
 #citation-container{
   position: relative;
 }
@@ -20,27 +33,27 @@
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 10px 30px ;
+  box-shadow: 0 10px 30px rgb(127, 162, 182);
   width: 40%;
   max-width: 40%;
   font-family: "Quicksand", sans-serif;
+  font-size: 16px;
   position: absolute;
   bottom: - 40px;
 }
 .question-container{
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .question {
   padding-top:10px;
   padding-bottom:10px;
   max-width:400px;
-  border-radius: 16px;
+  border-radius: 48px 0;
   background-color: rgb(251, 192, 178);
   font-family: "Poppins", sans-serif;
-  // position: absolute;
-  // bottom: 210px;
-  // left: 380px;
+  font-size: 24px;
+  border: solid 0.8px rgb(42, 40, 40);
 }
 .question h2{
   font-family: "Quicksand", sans-serif;
@@ -87,9 +100,9 @@ input[type="range"]::-moz-range-thumb {
 }
 .btn-new-mood{
   background-color: rgb(251, 192, 178);
-  opacity: 0.8;
   border-radius: 4px;
   padding:8px;
+  border: none;
 }
 /* Style pour le cercle */
 #color-display {
