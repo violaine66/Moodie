@@ -21,6 +21,9 @@
               <%=link_to "Journal", journal_posts_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
+              <%= link_to "Kit de secours", ressources_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
                 <%= link_to "Deconnexion", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>
             </li>
          </ul>
