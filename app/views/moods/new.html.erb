@@ -64,18 +64,18 @@
               </div>
             </div>
 
+            <div class="new-mood-submit mt-5 d-flex justify-content-center align-items-center">
+              <div class="form-group me-2">
+                <%= form.date_field :date, value: Date.today %>
+              </div>
+              <div class="submit ">
+                <%= form.submit "Enregistrer", class: "btn-new-mood " %>
+              </div>
+              <% end %>
+            </div>
 
-      <div class="new-mood-submit ">
 
-          <div class="form-group d-flex justify-content-center ">
-            <%= form.date_field :date, value: Date.today %>
-          </div>
-          <div class="form-group ">
-            <%= form.submit "Enregistrer", class: "btn-new-mood ms-3 " %>
-          </div>
-          <% end %>
 
-      </div>
 
           </div>
       </div>
