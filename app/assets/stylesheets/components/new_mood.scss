@@ -21,11 +21,11 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 10px 30px ;
-  width: 60%;
-  max-width: 60%;
+  width: 40%;
+  max-width: 40%;
   font-family: "Quicksand", sans-serif;
   position: absolute;
-  bottom: - 30px;
+  bottom: - 40px;
 }
 .question-container{
   margin-top: 70px;
@@ -34,7 +34,7 @@
 .question {
   padding-top:10px;
   padding-bottom:10px;
-  width:400px;
+  max-width:400px;
   border-radius: 16px;
   background-color: rgb(251, 192, 178);
   font-family: "Poppins", sans-serif;
