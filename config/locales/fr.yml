@@ -1,5 +1,9 @@
 fr:
   devise:
+    registrations:
+      signed_up: 'Bienvenue ! Vous êtes inscrit avec succès.'
+    users:
+      signed_up: 'Bienvenue ! Vous êtes inscrit avec succès.'
     sessions:
       signed_in: 'Connecté avec succès.'
       signed_out: 'Déconnecté avec succès.'
