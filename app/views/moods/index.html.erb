@@ -1,3 +1,4 @@
+<%= render "shared/navbar" %>
 <div class="container mt-3 text-center">
   <h1>Mon calendrier</h1>
     <div class="row justify-content-center">
@@ -17,8 +18,5 @@
         <% end %>
       </div>
     </div>
-    <a href="#"> Mon kit de secours</a>
+    <%= link_to "Mon kit de secours", ressources_path %>
   </div>
-
-
-
