@@ -1,0 +1,96 @@
+.new-mood {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 100%;
+  font-family: "Quicksand", sans-serif;
+  position:relative;
+  margin-top: 100px;
+}
+.new-mood h1{
+  font-family: "Quicksand", sans-serif;
+
+}
+#citation-container{
+  position: relative;
+}
+.citation{
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px ;
+  width: 60%;
+  max-width: 60%;
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  bottom: - 30px;
+}
+.question {
+  padding-top:10px;
+  padding-bottom:10px;
+  width:400px;
+  border-radius: 16px;
+  background-color: rgb(251, 192, 178);
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 210px;
+  left: 380px;
+}
+.question h2{
+  font-family: "Quicksand", sans-serif;
+}
+.btn-menu {
+  text-decoration: none;
+  border: 1px solid #cae1ea;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 28px;
+  color: rgb(56, 54, 54);
+}
+
+#mood-slider{
+  width: 100%;
+}
+/* Style du slider */
+input[type="range"] {
+  -webkit-appearance: none; /* Enlève le style par défaut pour Safari */
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: black;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: rgb(233, 142, 141);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: rgb(233, 142, 141);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-new-mood{
+  background-color: rgb(251, 192, 178);
+  opacity: 0.8;
+  border-radius: 4px;
+  padding:8px;
+}
+
+/* Style pour le cercle */
+#color-display {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
