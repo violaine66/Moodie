@@ -7,7 +7,7 @@
   max-width: 100%;
   font-family: "Quicksand", sans-serif;
   position:relative;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .new-mood h1{
   font-family: "Quicksand", sans-serif;
@@ -27,6 +27,10 @@
   position: absolute;
   bottom: - 30px;
 }
+.question-container{
+  margin-top: 70px;
+}
+
 .question {
   padding-top:10px;
   padding-bottom:10px;
@@ -34,9 +38,9 @@
   border-radius: 16px;
   background-color: rgb(251, 192, 178);
   font-family: "Poppins", sans-serif;
-  position: absolute;
-  bottom: 210px;
-  left: 380px;
+  // position: absolute;
+  // bottom: 210px;
+  // left: 380px;
 }
 .question h2{
   font-family: "Quicksand", sans-serif;
@@ -67,8 +71,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   background: rgb(233, 142, 141);
   border-radius: 50%;
   cursor: pointer;
