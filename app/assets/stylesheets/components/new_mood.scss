@@ -41,20 +41,7 @@
   position: absolute;
   bottom: - 40px;
 }
-// .question-container{
-//   margin-top: 30px;
-// }
 
-// .question {
-//   padding-top:10px;
-//   padding-bottom:10px;
-//   max-width:400px;
-//   border-radius: 48px 0;
-//   background-color: rgb(251, 192, 178);
-//   font-family: "Poppins", sans-serif;
-//   font-size: 24px;
-//   border: solid 0.8px rgb(42, 40, 40);
-// }
 .question-container {
   margin-top: 30px;
 }
@@ -75,7 +62,12 @@
 .text-center {
   text-align: center;
 }
-
+.mood-text{
+  font-family: "Reenie Beanie", cursive;
+  font-size: 32px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
 .btn-menu {
   text-decoration: none;
   border: 1px solid #cae1ea;
