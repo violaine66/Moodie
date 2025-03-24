@@ -1,11 +1,12 @@
-<div class="banner d-flex" >
+<div class="home">
+<div class="container" id="citation-container">
+  <div class="banner d-flex" >
   <div class="container align-self-center">
     <h1 class= "text-center"> Moodie</h1>
     <p class="text-end">Plus qu'une appli, un ami</p>
 
   </div>
 </div>
-<div class="container" id="citation-container">
   <div class="row">
     <div class="col-6 col-lg-3">
 
@@ -40,13 +41,13 @@
     </div>
   </div>
 
-  <div class="row ">
-    <div class="col-10 col-lg-7">
-      <div class="new-mood justify-content-start ">
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 col-lg-6">
+      <div class="new-mood ">
         <div class="form">
               <%= form_with model: @mood, local: true do |form| %>
             <div class="form-group mt-2 ">
-              <%= form.label :value, "Sélectionne ton humeur", class:"mb-3" %>
+              <%# <%= form.label :value, "Sélectionne ton humeur", class:"mb-3" %> 
               <div class="slider-container">
                 <%= form.text_field :value, type: 'range', min: 1, max: 7, step: 1, value: @mood.value,
                     class: "form-control-range", id: "mood-slider",
@@ -64,7 +65,19 @@
               </div>
             </div>
 
-            <div class="new-mood-submit mt-5 d-flex justify-content-center align-items-center">
+
+
+
+
+
+          </div>
+
+      </div>
+     </div>
+  </div>
+<div class="row">
+  <div class="col">
+       <div class="new-mood-submit mt-5 d-flex justify-content-center align-items-center">
               <div class="form-group me-2">
                 <%= form.date_field :date, value: Date.today %>
               </div>
@@ -73,19 +86,9 @@
               </div>
               <% end %>
             </div>
-
-
-
-
-          </div>
-      </div>
-     </div>
   </div>
+</div>
 
 
-
-
-   <div class="menu mt-5 text-center">
-        <%= link_to "Menu", menu_path, class:"btn-menu" %>
-      </div>
+</div>
 </div>
