@@ -14,7 +14,6 @@ opacity: .9;
   display: inline-block;
 
 }
-
 .new-mood::after {
   content: "";
   position: absolute;
@@ -25,12 +24,10 @@ opacity: .9;
   border-right: 15px solid transparent;
   border-top: 15px solid #ffffff;
 }
-
 .new-mood h1{
   font-family: "Quicksand", sans-serif;
 
 }
-
 // #citation-container{
 //   position: relative;
 // }
@@ -74,7 +71,6 @@ opacity: .9;
 .question-container {
   margin-top: 30px;
 }
-
 .question {
   padding: 10px;
   max-width: 400px;
