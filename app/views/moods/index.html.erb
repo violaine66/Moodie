@@ -2,8 +2,8 @@
 <div class="container mt-3 text-center">
   <h1>Mon calendrier</h1>
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-6">
-        <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
+      <div class=" calendar col-12 col-lg-6">
+          <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
           <div class="day-container">
             <div class="day-number"><%= date.day %></div>
             <div class="mood-circle-wrapper">
