@@ -1,3 +1,25 @@
+.mon-calendrier {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10 30px rgba(0, 0, 0, 0.1);
+  border: 0.9px solid rgb(26, 24, 24);
+  width: 550px;
+  text-align: center;
+  position:absolute;
+  top: 16%;
+  left: 50%;
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .mon-calendrier {
+    font-size: 2rem; /* Réduit la taille du titre sur les petits écrans */
+  }
+}
+.calendar-container {
+  margin-top: 60px;
+}
 .day-container {
   display: flex;
   flex-direction: column;
@@ -9,7 +31,9 @@
   background-color: rgb(250, 209, 199);
   border-radius: 10px;
 }
-
+.icone-calendar {
+  color: #4A4A4A; 
+}
 .day-number {
   font-size: 16px;
   font-weight: bold;
@@ -29,5 +53,20 @@
 }
 
 .mood-circle.empty {
-  visibility: hidden; /* Masque le cercle mais garde l'espace */
+  background-color: white;
+}
+.calendar-title {
+  font-size:24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:#4A4A4A;
+}
+.table tr {
+  border-radius: 8px;
+}
+.simple-calendar td {
+  background-color: rgb(250, 209, 199);
+  // padding: 10px;
+  text-align: center;
+
 }
