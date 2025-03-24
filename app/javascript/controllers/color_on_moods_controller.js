@@ -2,10 +2,11 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="color-on-moods"
 export default class extends Controller {
-  static targets = ["slider", "colorDisplay", "moodText", "emotji"]
+  static targets = ["slider", "colorDisplay", "moodText", "emotji", "form"]
 
   connect() {
     this.updateColor(); // Met à jour la couleur à l'initialisation
+    
   }
 
   updateColor() {
