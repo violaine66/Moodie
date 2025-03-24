@@ -6,7 +6,7 @@ class RessourcesController < ApplicationController
   end
 
   def pres_de_chez_moi
-    @pres_de_chez_moi = @ressources.where(category: "Pres de chez moi")
+    @pres_de_chez_moi = @ressources.where(category: "Près de chez moi")
   end
 
   private

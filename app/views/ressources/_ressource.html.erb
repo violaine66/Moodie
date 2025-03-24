@@ -1,0 +1,17 @@
+<div class="ressource-card rounded-5 shadow m-5 p-3">
+  <div class="d-flex flex-row">
+    <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
+      <img src="https://maisondesados-sdn.fr/wp-content/themes/aka_theme/libs/images/logo_mda_rond.png" alt="" style="height: 140px;">
+    <% end %>
+    <div class="card-body">
+      <h5 class="card-title"><strong><%= ressource.title %></strong></h5>
+      <p class="card-text small"><%= ressource.description %></p>
+      <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
+        <%= link_to "Voir site", ressource.url, class: "btn btn-dark", target: "_blank" %>
+      <% else %>
+        <%= link_to "Voir l'article", ressource.url, class: "btn btn-dark", target: "_blank" %>
+      <% end %>
+    </div>
+
+  </div>
+</div>
