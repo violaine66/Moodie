@@ -1,0 +1,39 @@
+<div class="simple-calendar">
+  <div class="calendar-heading">
+    <time datetime="<%= start_date.strftime('%Y-%m') %>" class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></time>
+
+    <nav class ="d-flex justify-content-center align-content-center">
+       <%= link_to calendar.url_for_previous_view, class: "icone-calendar" do %>
+          <i class="fas fa-arrow-left mb-2 me-3 fs-3"></i> <!-- Icône flèche gauche -->
+        <% end %>
+        <%= link_to calendar.url_for_today_view, class: "icone-calendar" do %>
+          <i class="fas fa-calendar-day me-3 fs-3"></i> <!-- Icône calendrier -->
+        <% end %>
+        <%= link_to calendar.url_for_next_view, class: "icone-calendar" do %>
+          <i class="fas fa-arrow-right  mb-2 fs-3"></i> <!-- Icône flèche droite -->
+        <% end %>
+    </nav>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <% date_range.slice(0, 7).each do |day| %>
+          <th><%= t('date.abbr_day_names')[day.wday] %></th>
+        <% end %>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% date_range.each_slice(7) do |week| %>
+        <tr>
+          <% week.each do |day| %>
+            <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+              <% instance_exec(day, calendar.sorted_events_for(day), &passed_block) %>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
