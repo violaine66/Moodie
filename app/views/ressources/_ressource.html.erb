@@ -5,7 +5,15 @@
     <% end %>
     <div class="card-body">
       <h5 class="card-title"><strong><%= ressource.title %></strong></h5>
-      <p class="card-text small"><%= ressource.description %></p>
+      <p class="card-text small">
+        <%= ressource.description %>
+        <br>
+        <% if not ressource.adress.nil? %>
+          <i class="fa-solid fa-map-location-dot"></i>
+          <%= ressource.adress %>
+        <% end %>
+      </p>
+
       <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
         <%= link_to "Voir site", ressource.url, class: "btn btn-dark", target: "_blank" %>
       <% else %>
