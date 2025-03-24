@@ -4,9 +4,11 @@
   align-items: center;
   justify-content: space-between;
   height: 60px; /* Même hauteur pour tous */
-
 }
-
+.table tr{
+  background-color: rgb(250, 209, 199);
+  border-radius: 10px;
+}
 
 .day-number {
   font-size: 16px;
