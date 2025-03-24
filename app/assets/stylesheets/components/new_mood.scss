@@ -1,35 +1,65 @@
+.home{
+background-color: rgb(127, 162, 182);
+opacity: .9;
+}
 .new-mood {
-  background-color: white;
+  background-color:white;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   width: 100%;
   max-width: 100%;
   margin-top: 30px;
   position:relative;
   margin-top: 30px;
-  border: solid 0.8px black;
+  // border: solid 0.8px black;
 }
 .new-mood h1{
   font-family: "Quicksand", sans-serif;
 
 }
 
+// #citation-container{
+//   position: relative;
+// }
+// .citation{
+//   background-color: white;
 
-#citation-container{
+//   padding: 20px;
+//   border-radius: 8px;
+//   box-shadow: 0 10px 30px rgb(127, 162, 182);
+//   width: 40%;
+//   max-width: 40%;
+//   font-family: "Quicksand", sans-serif;
+//   font-size: 16px;
+//   position: absolute;
+//   bottom: - 40px;
+// }
+// .citation {
+//   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+//   padding: 20px;
+//   border-radius: 12px;
+//   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+//   color: white;
+//   font-weight: bold;
+// }
+#citation-container {
   position: relative;
 }
-.citation{
-  background-color: white;
+
+.citation {
+  position: absolute;
+  max-width: 40%;
+  //   font-family: "Quicksand", sans-serif;
+  //   font-size: 16px;
+  background-color:  #fad0c4;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgb(127, 162, 182);
-  width: 40%;
-  max-width: 40%;
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  position: absolute;
-  bottom: - 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+  bottom: -40px;
+  text-align: center;
 }
 
 .question-container {
@@ -41,7 +71,8 @@
   max-width: 400px;  /* Limite la largeur maximale de la question */
   width: auto;  /* La largeur s'adapte automatiquement au contenu */
   border-radius: 48px 0;
-  background-color: rgb(251, 192, 178);
+  // background-color: rgb(251, 192, 178);
+  background-color: white;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   border: solid 0.8px rgb(42, 40, 40);
