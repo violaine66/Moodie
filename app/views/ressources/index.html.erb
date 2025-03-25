@@ -1,16 +1,16 @@
 <%= render "shared/navbar" %>
 <div class="ressources-container text-center">
 
-  <h1>Mon kit de secours</h1>
+  <h1 class="mon-calendrier">Mon kit de secours</h1>
 
   <div class="row justify-content-center">
-    <div class="col-12 col-lg-6">
+    <div class="calendar-container col-12 col-lg-6">
 
-      <div class="card m-4 rounded-5 shadow-sm">
+      <div class="card m-3 rounded-3">
         <div class="d-flex flex-row">
           <div class="card-body">
             <h5 class="card-title"><strong>Ressources près de chez moi</strong></h5>
-            <p class="card-text small">Trouvez les ressources à côté de chez vous en suivant le lien ci-après!</p>
+            <p class="card-text small">Retrouve les ressources à côté de chez toi en suivant le bouton ci-après!</p>
             <%= link_to "Recherche", pres_de_chez_moi_ressources_path, class: "btn btn-secondary" %>
           </div>
 
