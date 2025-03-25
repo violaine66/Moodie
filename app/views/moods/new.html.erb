@@ -45,7 +45,7 @@
     <div class="col-10 col-lg-6">
       <div class="new-mood ">
         <div class="form">
-              <%= form_with model: @mood, local: true do |form| %>
+               <%= form_with model: @mood, local: true, data: { turbo: false } do |form| %>
             <div class="form-group mt-2 ">
               <%# <%= form.label :value, "Sélectionne ton humeur", class:"mb-3" %>
               <!-- Cercle de couleur contrôlé par Stimulus -->
