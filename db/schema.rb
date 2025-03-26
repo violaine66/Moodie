@@ -54,7 +54,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_23_130328) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "date"
+    t.date "date", default: -> { "CURRENT_DATE" }
     t.index ["user_id"], name: "index_journal_posts_on_user_id"
   end
 
@@ -64,8 +64,6 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_23_130328) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date"
-    t.string "emotion"
-    t.text "emotions"
     t.index ["user_id"], name: "index_moods_on_user_id"
   end
 
