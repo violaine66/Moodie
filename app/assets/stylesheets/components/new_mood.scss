@@ -1,4 +1,4 @@
-.home{
+.home {
 background-color: rgb(127, 162, 182);
 opacity: .9;
 }
@@ -12,7 +12,6 @@ opacity: .9;
   margin-top: 15px;
   max-width: 80%;
   display: inline-block;
-
 }
 .new-mood::after {
   content: "";
@@ -28,45 +27,18 @@ opacity: .9;
   font-family: "Quicksand", sans-serif;
 
 }
-// #citation-container{
-//   position: relative;
-// }
-// .citation{
-//   background-color: white;
 
-//   padding: 20px;
-//   border-radius: 8px;
-//   box-shadow: 0 10px 30px rgb(127, 162, 182);
-//   width: 40%;
-//   max-width: 40%;
-//   font-family: "Quicksand", sans-serif;
-//   font-size: 16px;
-//   position: absolute;
-//   bottom: - 40px;
-// }
-// .citation {
-//   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-//   padding: 20px;
-//   border-radius: 12px;
-//   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-//   color: white;
-//   font-weight: bold;
-// }
-#citation-container {
-  position: relative;
-
-}
 .citation {
   position: absolute;
-  max-width: 40%;
+  max-width: 100%;
   background-color:  #fad0c4;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   color: white;
   font-weight: bold;
-  bottom: -40px;
   text-align: center;
+  bottom:50%;
 }
 .question-container {
   margin-top: 30px;
@@ -88,7 +60,7 @@ opacity: .9;
 .text-center {
   text-align: center;
 }
-.mood-text{
+.mood-text {
   font-family: "Reenie Beanie", cursive;
   font-size: 32px;
   font-weight: bolder;
@@ -102,8 +74,7 @@ opacity: .9;
   font-size: 28px;
   color: rgb(56, 54, 54);
 }
-
-#mood-slider{
+#mood-slider {
   width: 100%;
 }
 /* Style du slider */
@@ -115,7 +86,6 @@ input[type="range"] {
   border-radius: 5px;
   outline: none;
 }
-
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -125,7 +95,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
-
 input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
@@ -133,7 +102,7 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
-.btn-new-mood{
+.btn-new-mood {
   background-color: rgb(251, 192, 178);
   border-radius: 4px;
   padding:8px;
@@ -144,4 +113,45 @@ input[type="range"]::-moz-range-thumb {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+//  reponsive design
+@media (max-width: 992px) {
+  .citation-container {
+    position: relative; /* Maintient un positionnement contrôlé */
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .citation {
+    position: relative; /* Change absolute en relative */
+    bottom: auto; /* Supprime la contrainte de `bottom: 5px;` */
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  [data-color-on-moods-target="emotji"] {
+    width: 70px;  /* Augmente la taille de l'emoji */
+    height: 70px;
+  }
+
+  /* S'assurer que les éléments restent bien alignés */
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [data-color-on-moods-target="colorDisplay" ] {
+    width: 20 px;  /* Ajuste la taille du cercle de couleur */
+    height: 20px;
+
+  }
+  /* Si tu veux que le texte s'ajuste avec l'emoji */
+  .mood-text {
+    font-size: 1.2rem; /* Ajuste la taille du texte si besoin */
+    margin-left: 10px;  /* Ajoute un petit espace entre l'emoji et le texte */
+    text-align: center;
+  }
 }
