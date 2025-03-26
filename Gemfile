@@ -54,7 +54,6 @@ gem "simple_calendar"
 gem "cloudinary"
 
 group :development, :test do
-  gem "dotenv-rails"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
 end
@@ -77,3 +76,4 @@ group :test do
 end
 
 gem 'ruby-openai'
+gem "dotenv-rails"
