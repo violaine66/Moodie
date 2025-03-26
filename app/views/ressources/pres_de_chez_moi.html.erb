@@ -1,10 +1,13 @@
 <%= render "shared/navbar" %>
-<div class="ressources-container text-center mt-5">
+<div class="ressources-container text-center">
 
-  <h1 class="mon-calendrier">A proximité</h1>
+  <div class="title-ressources mt-5">
+    <h1>A proximité</h1>
+  </div>
+
 
   <div class="row justify-content-center">
-    <div class="calendar-container col-12 col-lg-6">
+    <div class="col-12 col-lg-6">
       <%= render @pres_de_chez_moi %>
     </div>
   </div>
