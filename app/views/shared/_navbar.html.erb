@@ -1,7 +1,7 @@
 
     <% if user_signed_in? %>
       <nav class="navbar bottom-navbar d-flex justify-content-around">
-          <%= link_to moods_path, class: "nav-link" do %>
+          <%= link_to moods_path, class: "nav-link", data: { turbo: false } do %>
               <i class="fa-solid fa-calendar"></i> Calendrier
           <% end %>
 
@@ -26,4 +26,3 @@
         <%= link_to "Login", new_user_session_path, class: "mt-3 d-none nav-link" %>
       </p>
     <% end %>
-
