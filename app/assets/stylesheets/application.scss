@@ -10,3 +10,12 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  height: 100vh;
+}
+
+@import "journal_posts/new";
+@import "journal_posts/index";
+@import "journal_posts/show";
+@import "journal_posts/edit";

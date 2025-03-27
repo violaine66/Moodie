@@ -6,7 +6,7 @@
 }
 
 .bottom-navbar {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: #7FA2B6;
@@ -19,8 +19,9 @@
 }
 
 .bottom-navbar .nav-link {
+  width: 64px;
   color: white;
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
   text-decoration: none;
   display: flex;
@@ -31,4 +32,12 @@
 .bottom-navbar .nav-link i {
   font-size: 20px;
   margin-bottom: 2px;
+}
+
+.nav-link.active {
+  color: #000000;
+}
+
+.nav-link.active i {
+  color: #000000;
 }
