@@ -3,9 +3,25 @@
 }
 
 .ressources-container {
-  background-color: #ffffff;
 }
 
 .ressources-container h1 {
   border-color: black;
+}
+
+.title-ressources {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10 30px rgba(0, 0, 0, 0.1);
+  border: 0.9px solid rgb(26, 24, 24);
+  width: 550px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .title-ressources {
+    font-size: 2rem; /* Réduit la taille du titre sur les petits écrans */
+    width: 380px;
+  }
 }
