@@ -1,23 +1,18 @@
+<%= render "shared/banner2" %>
 <div class="ressources-container text-center">
-
-  <h1 class="mon-calendrier">Mon kit de secours</h1>
-
-  <div class="justify-content-center">
-    <div class="calendar-container col-12 col-lg-6">
-      <div class="card m-3 rounded-3">
-        <div class="d-flex flex-row">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Ressources près de chez moi</strong></h5>
-            <p class="card-text small">Retrouve les ressources à côté de chez toi en suivant le bouton ci-après!</p>
-            <%= link_to "Recherche", pres_de_chez_moi_ressources_path, class: "btn btn-secondary" %>
+  <div class="title-card"><h1>Mon kit de secours</h1></div>
+    <div class="justify-content-center">
+      <div class="calendar-container col-12 col-lg-6">
+        <div class="card m-3 rounded-3">
+          <div class="d-flex flex-row">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Ressources près de chez moi</strong></h5>
+              <p class="card-text small">Retrouve les ressources à côté de chez toi en suivant le bouton ci-après!</p>
+              <%= link_to "Recherche", pres_de_chez_moi_ressources_path, class: "btn btn-secondary" %>
+            </div>
           </div>
-
         </div>
+        <%= render @ressources %>
       </div>
-
-      <%= render @ressources %>
-
     </div>
-  </div>
-
 </div>

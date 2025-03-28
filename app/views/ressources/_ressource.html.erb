@@ -1,4 +1,4 @@
-<%# <%= render "shared/navbar" %> 
+
 <div class="ressource-card rounded-5 shadow m-5 p-3">
   <div class="d-flex flex-row">
     <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
@@ -14,7 +14,6 @@
           <%= ressource.adress %>
         <% end %>
       </p>
-
       <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
         <%= link_to "Voir site", ressource.url, class: "btn btn-dark", target: "_blank" %>
       <% else %>

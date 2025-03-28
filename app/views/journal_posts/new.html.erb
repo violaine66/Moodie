@@ -1,23 +1,18 @@
+<%= render "shared/banner2" %>
 <div class="container-new-post">
-<h1>Créer un nouveau Post</h1>
-
-<%= form_with model: @journal_post, local: true do |form| %>
-
-  <div>
-    <%= form.label :date, "Date" %>
-    <%= form.date_field :date, class: "form-control" %>
-  </div>
-
-  <div>
-    <%= form.label :content, "Contenu" %>
-    <%= form.text_area :content, rows: 5, class: "form-control" %>
-  </div>
-
-  <div>
-    <%= form.submit "Créer", class: "btn btn-success" %>
-  </div>
-
-<% end %>
-
-<%= link_to "Annuler", journal_posts_path %>
+<div class="title-card"><h1>Créer un post</h1></div>
+  <%= form_with model: @journal_post, local: true do |form| %>
+    <div>
+      <%= form.label :date, "Date" %>
+      <%= form.date_field :date, class: "form-control" %>
+    </div>
+    <div>
+      <%= form.label :content, "Contenu" %>
+      <%= form.text_area :content, rows: 5, class: "form-control" %>
+    </div>
+    <div>
+      <%= form.submit "Créer", class: "btn btn-success" %>
+    </div>
+  <% end %>
+  <%= link_to "Annuler", journal_posts_path %>
 </div>
