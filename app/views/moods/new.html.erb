@@ -17,26 +17,7 @@
     </div>
   </div>
 <div class="container" data-controller="color-on-moods">
-  <div class="row justify-content-end question-container">
-    <div class="col-10 col-lg-4">
-        <div class="question">
-          <span class="text-center"
-            data-controller="typed"
-            data-typed-sentences-value="<%= ['Comment vas-tu aujourd\'hui ' + current_user.name + ' ?'].to_json %>">
-            <h2></h2>
-          </span>
-          <% if @mood.errors.any? %>
-            <div class="alert alert-danger">
-              <ul>
-                <% @mood.errors.full_messages.each do |message| %>
-                  <li><%= message %></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-        </div>
-    </div>
-  </div>
+
   <div class="row d-flex justify-content-center">
     <div class="col-10 col-lg-6">
       <div class="new-mood ">
