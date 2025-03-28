@@ -3,36 +3,29 @@
     <div class="banner d-flex" >
     <div class="container align-self-center">
       <h1 class= "text-center"> Moodie</h1>
-
     </div>
   </div>
-
-    <div class="row" id =" citation-container">
-      <div class="col-12 col-lg-3">
-        <div class="citation text-center">
+    <div class="row " id ="citation">
+      <div class="col-12 col-lg-10 justify-content-center align-self-center">
           “La vie, ce n'est pas d'attendre que les orages passent,
           c'est d'apprendre à danser sous la pluie.”
-          </div>
       </div>
     </div>
   </div>
 <div class="container" data-controller="color-on-moods">
-
   <div class="row d-flex justify-content-center">
-    <div class="col-10 col-lg-6">
+    <div class="col-8 col-lg-6">
       <div class="new-mood ">
         <div class="form">
-               <%= form_with model: @mood, local: true, data: { turbo: false } do |form| %>
+               <%= form_with model: @mood, data: { turbo: "false", controller: "color-on-moods", action: "submit->color-on-moods#submitForm" } do |form| %>
+
             <div class="form-group mt-2 ">
-              <%# <%= form.label :value, "Sélectionne ton humeur", class:"mb-3" %>
               <!-- Cercle de couleur contrôlé par Stimulus -->
               <div class="d-flex align-items-center justify-content-center mt-1">
                 <div class="d-flex justify-content-center me-5">
               <img data-color-on-moods-target="emotji" src= "<%= "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png" %> "width="70" height="70" alt="Emotji">
              </div>
-                <div data-color-on-moods-target="colorDisplay" class="mt-2 me-3"
-                  style="width: 50px; height: 50px; border-radius: 50%; background-color: <%= @mood.color %>;">
-                </div>
+
                 <p class="mood-text" data-color-on-moods-target="moodText"><%= @mood.value %></p>
               </div>
                  <div class="slider-container mt-5">
