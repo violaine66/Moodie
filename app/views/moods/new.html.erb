@@ -1,46 +1,84 @@
-<div class="home" data-controller="color-on-moods">
+<div class="home">
   <div class="container">
-    <div class="banner d-flex">
-      <div class="container align-self-center">
-        <h1 class="text-center">Moodie</h1>
-      </div>
+    <div class="banner d-flex" >
+    <div class="container align-self-center">
+      <h1 class= "text-center"> Moodie</h1>
+
     </div>
+  </div>
 
-    <div class="row justify-content-center mt-4">
-      <div class="col-10 col-lg-6 text-center">
-        <div class="mood-box">
-          <h2 class="mood-title">Mon humeur</h2>
-          <div class="mood-display">
-            <div class="mood-bubble">
-              <img data-color-on-moods-target="emoji"
-                   class="mood-circle <%= @mood.value ? '' : 'empty' %>"
-                   src="https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png"
-                   width="50"
-                   height="50"
-                   alt="Emoji">
-              <p class="mood-text" data-color-on-moods-target="moodText"><%= @mood.value || "Plutôt mal" %></p>
-            </div>
+    <div class="row" id =" citation-container">
+      <div class="col-12 col-lg-3">
+        <div class="citation text-center">
+          “La vie, ce n'est pas d'attendre que les orages passent,
+          c'est d'apprendre à danser sous la pluie.”
           </div>
-        </div>
-
-        <div class="slider-container mt-4">
-          <%= form_with model: @mood, local: true, data: { turbo: false } do |form| %>
-            <%= form.text_field :value,
-                  type: 'range',
-                  min: 1,
-                  max: 7,
-                  step: 1,
-                  value: @mood.value || 3,
-                  class: "form-control-range",
-                  id: "mood-slider",
-                  data: { color_on_moods_target: "slider", action: "input->color-on-moods#updateMoodDisplay" } %>
-
-            <div class="new-mood-submit mt-3">
-              <%= form.submit "Valider", class: "btn-new-mood" %>
-            </div>
-          <% end %>
-        </div>
       </div>
     </div>
   </div>
+<div class="container" data-controller="color-on-moods">
+  <div class="row justify-content-end question-container">
+    <div class="col-10 col-lg-4">
+        <div class="question">
+          <span class="text-center"
+            data-controller="typed"
+            data-typed-sentences-value="<%= ['Comment vas-tu aujourd\'hui ' + current_user.name + ' ?'].to_json %>">
+            <h2></h2>
+          </span>
+          <% if @mood.errors.any? %>
+            <div class="alert alert-danger">
+              <ul>
+                <% @mood.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 col-lg-6">
+      <div class="new-mood ">
+        <div class="form">
+               <%= form_with model: @mood, local: true, data: { turbo: false } do |form| %>
+            <div class="form-group mt-2 ">
+              <%# <%= form.label :value, "Sélectionne ton humeur", class:"mb-3" %>
+              <!-- Cercle de couleur contrôlé par Stimulus -->
+              <div class="d-flex align-items-center justify-content-center mt-1">
+                <div class="d-flex justify-content-center me-5">
+              <img data-color-on-moods-target="emotji" src= "<%= "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png" %> "width="70" height="70" alt="Emotji">
+             </div>
+                <div data-color-on-moods-target="colorDisplay" class="mt-2 me-3"
+                  style="width: 50px; height: 50px; border-radius: 50%; background-color: <%= @mood.color %>;">
+                </div>
+                <p class="mood-text" data-color-on-moods-target="moodText"><%= @mood.value %></p>
+              </div>
+                 <div class="slider-container mt-5">
+                <%= form.text_field :value, type: 'range', min: 1, max: 7, step: 1, value: @mood.value,
+                    class: "form-control-range", id: "mood-slider",
+                    data: { color_on_moods_target: "slider", action: "input->color-on-moods#updateColor" } %>
+              </div>
+            </div>
+          </div>
+
+      </div>
+     </div>
+  </div>
+<div class="row">
+  <div class="col">
+       <div class="new-mood-submit mt-4 mb-3 d-flex justify-content-center align-items-center">
+              <div class="form-group me-2">
+                <%= form.date_field :date, value: Date.today %>
+              </div>
+              <div class="submit ">
+                <%= form.submit "Enregistrer", class: "btn-new-mood " %>
+              </div>
+              <% end %>
+            </div>
+  </div>
+</div>
+
+
+</div>
 </div>
