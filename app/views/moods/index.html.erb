@@ -1,21 +1,26 @@
 <div class="container calendar text-center" id="calendar">
   <div class="title-calendar"><h1 class="mon-calendrier">Mon calendrier</h1></div>
-    <div class="row justify-content-center">
-      <div class=" calendar-container col-12 col-lg-6">
-          <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
-          <div class="day-container">
-            <div class="day-number"><%= date.day %></div>
-            <div class="mood-circle-wrapper">
-              <% if moods.any? %>
-                <% last_mood = moods.last %>  <%# Prend la dernière humeur enregistrée %>
-                <div class="mood-circle" style="background-color: <%= last_mood.color %>;"></div>
-              <% else %>
-                <div class="mood-circle empty"></div> <%# Cercle invisible mais qui prend de la place %>
-              <% end %>
-            </div>
+  <div class="row justify-content-center">
+    <div class="calendar-container col-12 col-lg-6">
+      <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
+        <div class="day-container">
+          <div class="day-number"><%= date.day %></div>
+          <div class="mood-circle-wrapper">
+            <% if moods.any? %>
+              <% last_mood = moods.last %>  <%# Récupérer le dernier mood enregistré %>
+              <div class="mood-circle">
+                <% if last_mood.emoji_url.present? %>  <%# Vérifier si un emoji est associé au mood %>
+                  <img src="<%= last_mood.emoji_url %>" width="30" height="30" alt="Emoji">
+                <% else %>
+                  <div class="empty-circle"></div>  <%# Cercle vide si pas d'emoji %>
+                <% end %>
+              </div>
+            <% else %>
+              <div class="mood-circle empty"></div>  <%# Cercle vide si aucun mood n'est défini %>
+            <% end %>
           </div>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     </div>
-    <%= link_to "Mon kit de secours", ressources_path %>
   </div>
+</div>

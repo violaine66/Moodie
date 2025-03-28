@@ -1,60 +1,34 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "stimulus";
 
-// Connects to data-controller="color-on-moods"
 export default class extends Controller {
-  static targets = ["slider", "colorDisplay", "moodText", "emotji", "form"]
+  static targets = ["slider", "moodText", "emoji"];
 
-  connect() {
-    this.updateColor(); // Met à jour la couleur à l'initialisation
-    
-  }
+  // This method will be triggered when the slider value changes
+  updateMoodDisplay() {
+    const moodValue = this.sliderTarget.value;
+    const moodTexts = [
+      "Très mal", "Mal", "Plutôt mal", "Moyen", "Plutôt bien", "Bien", "Très bien"
+    ];
+    const moodEmojis = [
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png",  // Très mal
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png",  // Mal
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png",  // Plutôt mal
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png",  // Moyen
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png",  // Plutôt bien
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png",  // Bien
+      "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png"   // Très bien
+    ];
 
-  updateColor() {
-    const value = parseInt(this.sliderTarget.value);
-    let color = '';
-    let moodText = '';
-    let emotjiSrc = "";
+    // Update the mood text and the emoji, but keep the white circle when there's no emoji
+    this.moodTextTarget.textContent = moodTexts[moodValue - 1];
 
-    switch(value) {
-      case 1:
-        color = 'rgb(66, 21, 163)'; // Bleu foncé
-        moodText = "Très mal";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png";
-        break;
-      case 2:
-        color = 'rgb(47, 120, 246)'; // Bleu clair
-        moodText = "Mal";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png";
-        break;
-      case 3:
-        color = 'rgb(210, 224, 251)'; // Bleu très clair
-        moodText = "Un peu mal";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png";
-        break;
-      case 4:
-        color = 'rgb(241, 243, 247)'; // Blanc
-        moodText = "Neutre";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png";
-        break;
-      case 5:
-        color = 'rgb(250, 255, 197)';
-        moodText = "Un peu bien";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png";
-        break;
-      case 6:
-        color = 'rgb(245, 255, 138)'; // Jaune pâle
-        moodText =  "Bien";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png";
-        break;
-      case 7:
-        color = 'rgb(244, 216, 3)'; // Jaune foncé
-        moodText = "Très bien";
-        emotjiSrc = "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png";
-        break;
+    const emojiUrl = moodEmojis[moodValue - 1];
+    if (emojiUrl) {
+      this.emojiTarget.src = emojiUrl;
+      this.emojiTarget.classList.remove('empty'); // Remove 'empty' class if there's an emoji
+    } else {
+      this.emojiTarget.src = ""; // No emoji
+      this.emojiTarget.classList.add('empty'); // Add 'empty' class for the circle
     }
-
-    this.colorDisplayTarget.style.backgroundColor = color;
-    this.moodTextTarget.innerText = moodText;
-    this.emotjiTarget.src = emotjiSrc;
   }
 }
