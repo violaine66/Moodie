@@ -17,6 +17,19 @@ class Mood < ApplicationRecord
     mood_colors.fetch(value, 'white') # Retourne la couleur ou 'white' si la valeur est invalide
   end
 
+    def emoji_url
+      case value
+      when 1..3
+        "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735269/2026645_ce84cs.png" # Triste
+      when 4
+        "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png" # Neutre
+      when 5..7
+        "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png" # Heureux
+      else
+        "" # Cas par défaut
+      end
+    end
+
   # Scope pour récupérer la dernière humeur par jour
   scope :latest_per_day, -> {
     select("DISTINCT ON (DATE(date)) *")

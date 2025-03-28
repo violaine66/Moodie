@@ -8,7 +8,10 @@
             <div class="mood-circle-wrapper">
               <% if moods.any? %>
                 <% last_mood = moods.last %>  <%# Prend la dernière humeur enregistrée %>
-                <div class="mood-circle" style="background-color: <%= last_mood.color %>;"></div>
+                <div class="mood-circle">
+                  <img src="<%= last_mood.emoji_url %>" alt="Mood emoji" class="mood-emoji">
+                </div>
+
               <% else %>
                 <div class="mood-circle empty"></div> <%# Cercle invisible mais qui prend de la place %>
               <% end %>
@@ -17,5 +20,5 @@
         <% end %>
       </div>
     </div>
-    
+
   </div>
