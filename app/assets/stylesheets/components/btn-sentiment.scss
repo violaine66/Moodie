@@ -1,6 +1,14 @@
 .btn-sentiment {
+  margin-top: 20px;
   background-color: rgb(251, 192, 178);
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 10 30px rgba(0, 0, 0, 0.1);
+  border: 0.9px solid rgb(0, 0, 0);
+  width: 200px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.1s ease-in-out;
 }

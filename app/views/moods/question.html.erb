@@ -5,17 +5,21 @@
   </div>
   <div class="container">
     <div class="row mt-5">
-      <div class="col-12 col-lg-8 justify-content-center" id="citation">
+      <div class="col-12 col-lg-4 justify-content-center" id="citation">
         “La vie, ce n'est pas d'attendre que les orages passent,
         c'est d'apprendre à danser sous la pluie.”
       </div>
   </div>
-
-    <div class="row justify-content-center mt-5">
-      <div class="col-10 col-lg-4 text-center">
+    <div class="row d-flex justify-content-center mt-4">
+      <div class="col-10 col-lg-4 text-center" id="question">
         <h2>Comment vas-tu aujourd'hui ?</h2>
-        <%= link_to "Je me sens", new_mood_path, class: "btn-sentiment text-decoration-none text-dark mt-3" %>
       </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="col-10 col-lg-4 text-center ">
+          <%= link_to "Je me sens ...", new_mood_path, class: "btn-sentiment text-dark mb-1" %>
+        </div>
+    </div>
     </div>
 
 </div>

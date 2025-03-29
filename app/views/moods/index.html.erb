@@ -1,9 +1,8 @@
 <%= render "shared/banner2" %>
-
-<div class="container calendar text-center" id="calendar">
+<div class="container text-center" id="calendar">
   <div class="title-card"><h1>Mon calendrier</h1></div>
     <div class="row justify-content-center">
-      <div class=" calendar-container col-12 col-lg-6">
+      <div class="calendar-container col-10 col-lg-6">
         <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
           <div class="day-container">
             <div class="day-number"><%= date.day %></div>
