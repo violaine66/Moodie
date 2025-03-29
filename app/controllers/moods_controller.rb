@@ -1,6 +1,8 @@
 class MoodsController < ApplicationController
   before_action :authenticate_user!  # Assurer que l'utilisateur est connecté
 
+  def question
+  end
   def new
     @mood = current_user.moods.build  # Créer une nouvelle humeur pour l'utilisateur actuel
   end
@@ -9,7 +11,7 @@ class MoodsController < ApplicationController
     @mood = current_user.moods.build(mood_params)  # Associer l'utilisateur actuel à l'humeur
 
     if @mood.save
-      redirect_to moods_path, notice: 'Humeur enregistrée avec succès.'
+      redirect_to moods_path
     else
       render :new  # Si l'humeur n'est pas valide, on reste sur le formulaire pour corriger l'erreur
     end

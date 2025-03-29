@@ -27,11 +27,11 @@
   align-items: center;
   justify-content: center;
 }
-.mood-circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
+// .mood-circle {
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+// }
 .mood-circle.empty {
   background-color: white;
 }
@@ -43,4 +43,19 @@
   background-color: rgb(250, 209, 199);
   // padding: 10px;
   text-align: center;
+}
+.mood-circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white; /* Fond blanc */
+}
+
+.mood-emoji {
+  width: 100%;
+  height: auto;
+  max-width: 35px;
 }
