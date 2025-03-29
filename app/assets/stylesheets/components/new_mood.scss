@@ -29,7 +29,7 @@ min-height: calc(100vh - 70px);
 
 }
 
-.citation {
+#citation {
   // position: absolute;
   // bottom: 50%;
   // left: 50%;
@@ -42,9 +42,6 @@ min-height: calc(100vh - 70px);
   font-weight: bold;
   text-align: center;
 //  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
 }
 .question-container {
