@@ -24,7 +24,7 @@ class Mood < ApplicationRecord
       when 4
         "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735300/2026759_amrmxz.png" # Neutre
       when 5..7
-        "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png" # Heureux
+        "https://res.cloudinary.com/dbggxy9uy/image/upload/v1742735284/2026760_q61j0m.png" 
       else
         "" # Cas par défaut
       end

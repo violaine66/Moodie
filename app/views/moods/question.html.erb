@@ -1,11 +1,15 @@
 <div class="home">
+  <div class="banner d-flex flex-column align-items-center justify-content-center">
+    <h1>Moodie</h1>
+      <%# <p class="text-end">Plus qu'une appli, un ami</p> %>
+  </div>
   <div class="container">
-    <div class="banner d-flex">
-      <div class="container align-self-center">
-        <h1 class="text-center">Moodie</h1>
-        <p class="text-end">Plus qu'une appli, un ami</p>
+    <div class="row citation mt-5">
+      <div class="col-12 col-lg-8 ">
+        “La vie, ce n'est pas d'attendre que les orages passent,
+        c'est d'apprendre à danser sous la pluie.”
       </div>
-    </div>
+  </div>
 
     <div class="row justify-content-center mt-5">
       <div class="col-10 col-lg-4 text-center">
@@ -13,5 +17,6 @@
         <%= link_to "Je me sens", new_mood_path, class: "btn-sentiment text-decoration-none text-dark mt-3" %>
       </div>
     </div>
-  </div>
+
+</div>
 </div>
