@@ -1,84 +1,43 @@
-.home {
-background-color: rgb(127, 162, 182);
-opacity: .9;
-min-height: calc(100vh - 70px);
-position : relative;
-}
-
 .new-mood {
   position: relative;
   padding: 30px;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
   width: 80%;
-  margin-top: 15px;
+  margin: 120px auto;
   max-width: 80%;
   display: inline-block;
 }
-.new-mood::after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #ffffff;
-}
-.new-mood h1{
+.new-mood h1 {
   font-family: "Quicksand", sans-serif;
-
 }
 
-#citation {
-  position: absolute;
-  bottom: 47%;
-  left: 32%;
-  background-color: rgb(251, 192, 178);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 0.9px solid rgb(0, 0, 0);
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-#question {
-  padding: 20px;
-  border-radius: 15px;
-  border: 3px solid black;
-  box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
-  position: relative;
-}
-
-/* Ajout d'un petit triangle pour l'effet bulle BD */
-#question::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 20px;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 20px solid black;
-}
-
-
+  /* Ajout d'un petit triangle pour l'effet bulle BD */
+  .new-mood::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid black;
+  }
 .mood-text {
   font-family: "Reenie Beanie", cursive;
   font-size: 32px;
   font-weight: bolder;
   letter-spacing: 3px;
 }
-.btn-menu {
-  text-decoration: none;
-  border: 1px solid #cae1ea;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 28px;
-  color: rgb(56, 54, 54);
-}
+// .btn-menu {
+//   text-decoration: none;
+//   border: 1px solid #cae1ea;
+//   border-radius: 5px;
+//   padding: 10px 20px;
+//   font-size: 28px;
+//   color: rgb(56, 54, 54);
+// }
 #mood-slider {
   width: 100%;
 }
