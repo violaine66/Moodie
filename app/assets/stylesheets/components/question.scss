@@ -1,0 +1,40 @@
+.home {
+  background-color: rgb(127, 162, 182);
+  opacity: .9;
+  min-height: calc(100vh - 70px);
+  position : relative;
+  }
+  #citation {
+    position: absolute;
+    bottom: 47%;
+    left: 32%;
+    background-color: rgb(251, 192, 178);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 0.9px solid rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  #question {
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
+    position: relative;
+  }
+
+  /* Ajout d'un petit triangle pour l'effet bulle BD */
+  #question::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid black;
+  }
+
