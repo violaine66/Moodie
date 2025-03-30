@@ -16,6 +16,7 @@
     color: white;
     font-weight: bold;
     text-align: center;
+
   }
   #question {
     padding: 20px;
@@ -37,4 +38,29 @@
     border-right: 15px solid transparent;
     border-top: 20px solid black;
   }
+// responsive design
+@media (max-width: 992px) {
+  .home {
+    padding: 20px;
+    text-align: center;
+  }
 
+  #citation {
+    position: relative; // Change absolute en relative pour s'adapter à la taille de l'écran
+    bottom: auto;
+    left: auto;
+    margin: 5px auto; // Centre le texte automatiquement
+    width: 90%; // Adapte la taille de la citation
+    font-size: 0.9rem; // Réduit la taille du texte pour les petits écrans
+  }
+
+  #question {
+    width: 90%; // S'assure que le texte ne dépasse pas
+    font-size: 1.2rem;
+  }
+
+  .btn-sentiment {
+    width: 90%; // Ajuste le bouton pour qu'il soit bien centré
+    font-size: 1rem; // Réduit la taille si nécessaire
+  }
+}
