@@ -3,7 +3,7 @@
   padding: 30px;
   border-radius: 25px;
   box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
-  width: 80%;
+  // width: 100%;
   margin: 120px auto;
   max-width: 80%;
   display: inline-block;
@@ -30,14 +30,7 @@
   font-weight: bolder;
   letter-spacing: 3px;
 }
-// .btn-menu {
-//   text-decoration: none;
-//   border: 1px solid #cae1ea;
-//   border-radius: 5px;
-//   padding: 10px 20px;
-//   font-size: 28px;
-//   color: rgb(56, 54, 54);
-// }
+
 #mood-slider {
   width: 100%;
 }
@@ -117,5 +110,47 @@ input[type="range"]::-moz-range-thumb {
     font-size: 1.2rem; /* Ajuste la taille du texte si besoin */
     margin-left: 10px;  /* Ajoute un petit espace entre l'emoji et le texte */
     text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .new-mood {
+    max-width: 90%; // Réduit la largeur pour s'adapter aux petits écrans
+    padding: 20px; // Réduit un peu le padding
+  }
+
+  .mood-text {
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  .new-mood-submit {
+    flex-direction: column; // Empile les éléments verticalement
+    align-items: center;
+  }
+
+  .submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-new-mood {
+    width: fit-content;
+    min-width: 120px; // Assure une taille minimale
+    text-align: center;
+    margin: 5px auto; // Centre le bouton
+  }
+}
+@media (max-width: 768px) {
+  #citation {
+    position: relative; // Permet à la citation de rester bien placée
+    width: 90%; // Réduit la largeur pour s’adapter aux petits écrans
+    left: auto; // Supprime la position gauche définie en desktop
+    bottom: auto; // Supprime le positionnement vertical fixe
+    margin: 20px auto; // Centre la citation automatiquement
+    font-size: 0.9rem; // Réduit la taille du texte si nécessaire
+    text-align: center; // S'assure que le texte est bien centré
+    padding: 10px;
   }
 }

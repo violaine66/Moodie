@@ -58,3 +58,31 @@
   height: auto;
   max-width: 35px;
 }
+// reponsive design
+@media (max-width: 768px) {
+  .calendar-container {
+    width: 90%;  // Réduit la largeur du calendrier
+    margin: 20px auto; // Centre le calendrier
+  }
+
+  .simple-calendar table {
+    font-size: 12px; // Réduit la taille du texte des jours
+  }
+
+  .day-container {
+    height: 50px; // Réduit l’espace vertical entre les jours
+  }
+
+  .day-number {
+    font-size: 12px; // Réduit la taille des numéros de jour
+  }
+
+  .mood-circle {
+    width: 25px; // Réduit la taille des cercles d'humeur
+    height: 25px;
+  }
+
+  .mood-emoji {
+    max-width: 20px; // Réduit la taille des emojis
+  }
+}
