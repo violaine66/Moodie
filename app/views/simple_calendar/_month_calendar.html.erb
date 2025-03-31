@@ -11,12 +11,12 @@
  </div>
     <nav class ="d-flex justify-content-center align-content-center">
         <%= link_to calendar.url_for_today_view, class: "icone-calendar" do %>
-          <i class="fas fa-calendar-day me-3 fs-4"></i> <!-- Icône calendrier -->
+          <i class="fas fa-calendar-day my-2 me-3 fs-4"></i> <!-- Icône calendrier -->
         <% end %>
     </nav>
-  <table class="table">
+  <table class="table mt-3">
     <thead>
-      <tr>
+      <tr >
         <% date_range.slice(0, 7).each do |day| %>
           <th><%= t('date.abbr_day_names')[day.wday] %></th>
         <% end %>

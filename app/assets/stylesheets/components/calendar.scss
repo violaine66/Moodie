@@ -2,6 +2,9 @@
   margin-top: 50px;
   min-height: calc(100vh - 70px);
 }
+.calendar-heading {
+  margin-top: 85px;
+}
 .day-container {
   display: flex;
   flex-direction: column;
@@ -39,7 +42,7 @@
   border-radius: 8px;
 }
 .simple-calendar td {
-  background-color: rgb(250, 209, 199);
+  background-color: rgb(251, 192, 178);
   // padding: 10px;
   text-align: center;
 }
