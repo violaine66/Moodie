@@ -1,8 +1,8 @@
 <%= render partial: "shared/banner2" %>
 <div class="container" data-controller="color-on-moods">
     <div class="title-card"><h1>Mon humeur</h1></div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-8 col-lg-6">
+      <div class="row d-flex justify-content-center ">
+        <div class="col-10 col-lg-10">
           <div class="new-mood ">
             <div class="form">
               <%= form_with model: @mood, data: { turbo: "false", controller: "color-on-moods" } do |form| %>
@@ -22,11 +22,11 @@
               <div class="row">
                 <div class="col">
                   <div class="new-mood-submit mt-4 mb-3 d-flex justify-content-center align-items-center">
-                    <div class="form-group me-2">
+                    <div class="form-group mt-3 me-2">
                       <%= form.date_field :date, value: Date.today %>
                     </div>
                     <div class="submit ">
-                      <%= form.submit "Enregistrer", class: "btn-new-mood" %>
+                      <%= form.submit "Valider", class: "btn-new-mood" %>
                     </div>
                   </div>
                 </div>
