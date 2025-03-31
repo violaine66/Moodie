@@ -1,3 +1,48 @@
 .container-new-post{
   min-height: calc(100vh - 70px);
 }
+
+.post-container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.post-card {
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-label {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #7FA2B6;
+  border-color: #7FA2B6;
+}
+
+.btn-primary:hover {
+  background-color: #68899e;
+  border-color: #5a7a8d;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.gap-3 {
+  gap: 15px;
+}
