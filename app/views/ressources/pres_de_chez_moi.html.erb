@@ -3,7 +3,7 @@
   <div class="title-card"><h1>Près de chez moi</h1></div>
   <div class="justify-content-center">
     <div class="calendar-container col-12 col-lg-6">
-      <%= render @pres_de_chez_moi %>
+      <%= render 'list', ressources: @pres_de_chez_moi %>
     </div>
   </div>
   <%= link_to "Retour aux ressources", ressources_path, class: "btn btn-primary btn-sm mb-4" %>

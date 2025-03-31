@@ -12,7 +12,19 @@
             </div>
           </div>
         </div>
-        <%= render @ressources %>
+
+        <div class="d-flex flex-column align-items-center" data-controller="search-ressources">
+          <%= form_with url: ressources_path, method: :get, html: { class: "col-8", data: {search_ressources_target: "form"}} do |f|%>
+            <%= f.text_field :query, class: "form-control ressources-input", placeholder:
+                     "Chercher un terme...", value: params[:query],
+                     data: {
+                        search_ressources_target: "input",
+                        action: "keyup->search-ressources#update"
+                      } %>
+          <% end %>
+
+          <%= render 'list', ressources: @ressources %>
+        </div>
       </div>
     </div>
 </div>
