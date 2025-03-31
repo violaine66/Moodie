@@ -3,9 +3,8 @@
   padding: 30px;
   border-radius: 25px;
   box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
-  // width: 100%;
-  margin: 120px auto;
-  max-width: 80%;
+  width: 100%;
+  margin: 150px auto;
   display: inline-block;
 }
 .new-mood h1 {
@@ -25,7 +24,7 @@
     border-top: 20px solid black;
   }
 .mood-text {
-  font-family: "Reenie Beanie", cursive;
+  font-family: "Quicksand", sans-serif;
   font-size: 32px;
   font-weight: bolder;
   letter-spacing: 3px;
@@ -62,7 +61,7 @@ input[type="range"]::-moz-range-thumb {
 .btn-new-mood {
   background-color: rgb(251, 192, 178);
   border-radius: 4px;
-  padding:8px;
+  padding:10px;
   border: none;
 }
 /* Style pour le cercle */
@@ -139,7 +138,7 @@ input[type="range"]::-moz-range-thumb {
     width: fit-content;
     min-width: 120px; // Assure une taille minimale
     text-align: center;
-    margin: 5px auto; // Centre le bouton
+    margin: 15px auto; // Centre le bouton
   }
 }
 @media (max-width: 768px) {

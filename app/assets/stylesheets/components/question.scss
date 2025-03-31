@@ -4,6 +4,16 @@
   min-height: calc(100vh - 70px);
   position : relative;
   }
+  .banner h1 {
+    font-family: "Emblema One", cursive, sans-serif;
+    font-style: normal;
+    font-size: 54px;
+  }
+  .banner p {
+    font-size: 21px;
+    font-family: quicksand;
+    font-weight: bold;
+  }
   #citation {
     position: absolute;
     bottom: 47%;
@@ -16,14 +26,19 @@
     color: white;
     font-weight: bold;
     text-align: center;
+    font-family: playfair;
+    font-size: 16px;
 
   }
   #question {
+    margin-top: 60px;
     padding: 20px;
     border-radius: 15px;
     border: 3px solid black;
     box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
     position: relative;
+    font-family: quicksand;
+    font-weight: bold;
   }
 
   /* Ajout d'un petit triangle pour l'effet bulle BD */
@@ -46,21 +61,16 @@
   }
 
   #citation {
-    position: relative; // Change absolute en relative pour s'adapter à la taille de l'écran
-    bottom: auto;
-    left: auto;
+    position: absolute; // Change absolute en relative pour s'adapter à la taille de l'écran
+    bottom: 58%; // Ajuste la position pour les petits écrans
+    left: 18%; // Centre horizontalement
     margin: 5px auto; // Centre le texte automatiquement
-    width: 90%; // Adapte la taille de la citation
+    width: 65%; // Adapte la taille de la citation
     font-size: 0.9rem; // Réduit la taille du texte pour les petits écrans
   }
 
   #question {
     width: 90%; // S'assure que le texte ne dépasse pas
     font-size: 1.2rem;
-  }
-
-  .btn-sentiment {
-    width: 90%; // Ajuste le bouton pour qu'il soit bien centré
-    font-size: 1rem; // Réduit la taille si nécessaire
   }
 }
