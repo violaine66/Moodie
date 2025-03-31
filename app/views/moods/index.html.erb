@@ -10,10 +10,17 @@
               <% if moods.any? %>
                 <% last_mood = moods.last %>  <%# Prend la dernière humeur enregistrée %>
                 <div class="mood-circle">
-                  <%= link_to journal_posts_path(date: date) do %>
+                <% journal_post = JournalPost.find_by(date: date) %>
+                <% if journal_post.present? %>
+                  <%= link_to journal_post_path(journal_post) do %>
                     <img src="<%= last_mood.emoji_url %>" alt="Mood emoji" class="mood-emoji">
                   <% end %>
-                </div>
+                <% else %>
+                  <%= link_to new_journal_post_path(date: date) do %>
+                    <img src="<%= last_mood.emoji_url %>" alt="Mood emoji" class="mood-emoji">
+                  <% end %>
+                <% end %>
+              </div>
               <% else %>
                 <div class="mood-circle empty"></div> <%# Cercle invisible mais qui prend de la place %>
               <% end %>
