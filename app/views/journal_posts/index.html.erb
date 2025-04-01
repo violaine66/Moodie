@@ -5,20 +5,17 @@
   </div>
   <div class="button-add">
     <%= link_to new_journal_post_path do %>
-      <%= image_tag "circle-add.svg", id: "button-add", alt: "button add post" %>
+      <%= image_tag "circle_add.svg", id: "button-add", alt: "button add post" %>
     <% end %>
   </div>
   <% @journal_posts.each do |post| %>
-    <div class="post-card-index">
-      <div>
+    <%= link_to journal_post_path(post), class: "post-card-index" do %>
+      <div class="post-date">
         <%= post.date %>
       </div>
-      <div>
+      <div class="post-content-35">
         <%= truncate(post.content, length: 35, separator: ' ') %>
       </div>
-      <div class="see-button">
-        <%= link_to "Voir", journal_post_path(post), id:"link-post" %>
-      </div>
-    </div>
+    <% end %>
   <% end %>
 </div>
