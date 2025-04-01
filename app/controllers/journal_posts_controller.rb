@@ -1,4 +1,5 @@
 class JournalPostsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @journal_posts = JournalPost.all
   end
