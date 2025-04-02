@@ -2,7 +2,7 @@
   position: relative;
   padding: 25px;
   border-radius: 25px;
-  box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
+  box-shadow: 4px 4px 0px rgb(148, 150, 158), -4px -4px 0px rgb(148, 150, 158), 4px -4px 0px rgb(148, 150, 158), -4px 4px 0px rgb(148, 150, 158);
   width: 100%;
   margin-top: 80px;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@ img.logo {
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid black;
+    border-top: 20px solid rgb(148, 150, 158);
   }
 .mood-text {
   font-family: "Quicksand", sans-serif;
@@ -58,14 +58,14 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 45px;
   height: 45px;
-  background: rgb(233, 142, 141);
+  background: rgb(251, 192, 178);
   border-radius: 50%;
   cursor: pointer;
 }
 input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: rgb(233, 142, 141);
+  background: rgb(251, 192, 178);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -171,5 +171,6 @@ input[type="range"]::-moz-range-thumb {
     padding: 1rem;
     border-radius: 12px;
     color: white;
+    border: none;
   }
 }

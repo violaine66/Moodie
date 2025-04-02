@@ -26,24 +26,19 @@
   align-items: center;
   justify-content: center;
 }
-// .mood-circle {
-//   width: 20px;
-//   height: 20px;
-//   border-radius: 50%;
-// }
+
 .mood-circle.empty {
   background-color: white;
 }
-
 .table th {
   color :white;
    background-color: #7FA2B6
  }
 .simple-calendar td {
   background-color: rgb(251, 192, 178);
-  // padding: 10px;
   text-align: center;
 }
+
 .mood-circle {
   width: 40px;
   height: 40px;
@@ -52,6 +47,10 @@
   justify-content: center;
   border-radius: 50%;
   background-color: white; /* Fond blanc */
+}
+.simple-calendar tr {
+  margin: 0;
+  padding: 0;
 }
 
 .mood-emoji {
@@ -69,7 +68,10 @@
   .simple-calendar table {
     font-size: 12px; // Réduit la taille du texte des jours
   }
-
+  .simple-calendar tr {
+    margin: 0;
+    padding: 0;
+  }
   .day-container {
     height: 50px; // Réduit l’espace vertical entre les jours
   }
@@ -77,12 +79,10 @@
   .day-number {
     font-size: 12px; // Réduit la taille des numéros de jour
   }
-
   .table th {
    color :white;
-    background-color: #7FA2B6
+  background-color: #7FA2B6
   }
-
   .mood-circle {
     width: 25px; // Réduit la taille des cercles d'humeur
     height: 25px;
