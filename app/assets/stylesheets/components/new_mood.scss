@@ -1,13 +1,10 @@
-.body {
-  background-color: #F5F5F5;
-}
 .new-mood {
   position: relative;
-  padding: 30px;
+  padding: 25px;
   border-radius: 25px;
   box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -15,6 +12,9 @@
 }
 .new-mood h1 {
   font-family: "Quicksand", sans-serif;
+}
+img.logo {
+  margin-top: 25px;
 }
 
   /* Ajout d'un petit triangle pour l'effet bulle BD */
@@ -36,11 +36,11 @@
   letter-spacing: 3px;
 }
 .date {
+  text-align: center;
   background-color: #7FA2B6 ;
   padding: 1rem;
   border-radius: 12px;
 }
-
 #mood-slider {
   width: 100%;
 }
@@ -74,8 +74,9 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 4px;
   padding:10px;
   border: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 /* Style pour le cercle */
 #color-display {
@@ -169,5 +170,6 @@ input[type="range"]::-moz-range-thumb {
     background-color: #7FA2B6 ;
     padding: 1rem;
     border-radius: 12px;
+    color: white;
   }
 }
