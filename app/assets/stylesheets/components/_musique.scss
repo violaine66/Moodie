@@ -13,8 +13,7 @@
   justify-content: center;
   align-self: center;
   margin-top: 40px;
-  background-color: rgb(251, 192, 178);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
   border-radius: 20px;
   min-height: 100px;
   max-height: 100px;
@@ -23,13 +22,11 @@
   font-family: quicksand;
   font-weight: bold;
   align-items: center;
-
   text-align: center;
 }
 
 .musique-card i.fa-solid {
-  color: white;
-  // color: rgb(233, 142, 141);
+  color: rgb(233, 142, 141);
   font-size: 40px;
   font-weight: bolder;
 }
