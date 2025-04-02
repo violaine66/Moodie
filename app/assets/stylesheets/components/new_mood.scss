@@ -1,13 +1,10 @@
-.body {
-  background-color: #F5F5F5;
-}
 .new-mood {
   position: relative;
-  padding: 30px;
+  padding: 25px;
   border-radius: 25px;
-  box-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black;
+  box-shadow: 4px 4px 0px rgb(148, 150, 158), -4px -4px 0px rgb(148, 150, 158), 4px -4px 0px rgb(148, 150, 158), -4px 4px 0px rgb(148, 150, 158);
   width: 100%;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -15,6 +12,9 @@
 }
 .new-mood h1 {
   font-family: "Quicksand", sans-serif;
+}
+img.logo {
+  margin-top: 25px;
 }
 
   /* Ajout d'un petit triangle pour l'effet bulle BD */
@@ -27,7 +27,7 @@
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid black;
+    border-top: 20px solid rgb(148, 150, 158);
   }
 .mood-text {
   font-family: "Quicksand", sans-serif;
@@ -36,9 +36,11 @@
   letter-spacing: 3px;
 }
 .date {
+  text-align: center;
   background-color: #7FA2B6 ;
+  padding: 1rem;
+  border-radius: 12px;
 }
-
 #mood-slider {
   width: 100%;
 }
@@ -47,7 +49,7 @@ input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
   height: 10px;
-  background: black;
+  background: rgb(127, 162, 182);
   border-radius: 5px;
   outline: none;
 }
@@ -56,14 +58,14 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 45px;
   height: 45px;
-  background: rgb(233, 142, 141);
+  background: rgb(251, 192, 178);
   border-radius: 50%;
   cursor: pointer;
 }
 input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: rgb(233, 142, 141);
+  background: rgb(251, 192, 178);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -72,8 +74,9 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 4px;
   padding:10px;
   border: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 /* Style pour le cercle */
 #color-display {
@@ -165,5 +168,9 @@ input[type="range"]::-moz-range-thumb {
   }
   .date {
     background-color: #7FA2B6 ;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+    border: none;
   }
 }
