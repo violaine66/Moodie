@@ -23,7 +23,7 @@
                 <div class="col">
                   <div class="new-mood-submit mt-4 mb-3 d-flex justify-content-center align-items-center">
                     <div class="form-group mt-3 me-2">
-                      <%= form.date_field :date, value: Date.today %>
+                      <%= form.date_field :date, value: Date.today, class: "date" %>
                     </div>
                     <div class="submit ">
                       <%= form.submit "Valider", class: "btn-new-mood" %>
