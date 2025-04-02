@@ -35,6 +35,9 @@
   font-weight: bolder;
   letter-spacing: 3px;
 }
+.date {
+  background-color: #7FA2B6 ;
+}
 
 #mood-slider {
   width: 100%;
@@ -159,5 +162,8 @@ input[type="range"]::-moz-range-thumb {
     font-size: 0.9rem; // Réduit la taille du texte si nécessaire
     text-align: center; // S'assure que le texte est bien centré
     padding: 10px;
+  }
+  .date {
+    background-color: #7FA2B6 ;
   }
 }
