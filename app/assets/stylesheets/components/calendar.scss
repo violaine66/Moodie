@@ -12,10 +12,7 @@
   justify-content: space-between;
   height: 60px; /* Même hauteur pour tous */
 }
-.table tr{
-  background-color: rgb(250, 209, 199);
-  border-radius: 10px;
-}
+
 .icone-calendar {
   color: #4A4A4A;
 }
@@ -38,9 +35,10 @@
   background-color: white;
 }
 
-.table tr {
-  border-radius: 8px;
-}
+.table th {
+  color :white;
+   background-color: #7FA2B6
+ }
 .simple-calendar td {
   background-color: rgb(251, 192, 178);
   // padding: 10px;
@@ -78,6 +76,11 @@
 
   .day-number {
     font-size: 12px; // Réduit la taille des numéros de jour
+  }
+
+  .table th {
+   color :white;
+    background-color: #7FA2B6
   }
 
   .mood-circle {
