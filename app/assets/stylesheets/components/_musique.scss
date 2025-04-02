@@ -1,0 +1,36 @@
+.musiques {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%; /* Assure que la grille occupe toute la largeur */
+  justify-items: center; /* Centre les éléments de la grille */
+}
+
+.musique-card {
+  margin-top: 40px;
+  background-color: rgb(251, 192, 178);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  font-family: quicksand;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Centre le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  text-align: center;
+}
+
+.container-musique {
+  display: flex;
+  justify-content: center; /* Centre les éléments dans le conteneur */
+  flex-direction: column;
+  align-items: center; /* Centre verticalement */
+  width: 100%;
+}
+
+.title-card h1 {
+  margin-bottom: 20px;
+}

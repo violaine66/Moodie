@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   get 'moods/question', to: 'moods#question', as: :question_mood
   resources :moods
+  resources :musiques, only: [:index]
   resources :journal_posts
   resources :ressources do
     collection do

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_03_23_130328) do
+ActiveRecord::Schema[7.1].define(version: 2025_04_02_092654) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -54,7 +54,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_23_130328) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "date", default: -> { "CURRENT_DATE" }
+    t.date "date"
     t.index ["user_id"], name: "index_journal_posts_on_user_id"
   end
 
@@ -64,7 +64,15 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_23_130328) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date"
+    t.string "emotion"
+    t.text "emotions"
     t.index ["user_id"], name: "index_moods_on_user_id"
+  end
+
+  create_table "musiques", force: :cascade do |t|
+    t.string "lien"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "ressources", force: :cascade do |t|
