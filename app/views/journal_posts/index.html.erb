@@ -14,10 +14,11 @@
         <%= post.date %>
       </div>
       <div class="emoji-post">
-          <% mood = Mood.find_by(date: post.date) %>
-            <% if mood.present? %>
+        <% @last_moods.each do |date, mood| %>
+            <% if mood.present? && mood.date == post.date %>
               <img src="<%= mood.emoji_url %>" alt="Emoji humeur" class="mood-emoji">
             <% end %>
+          <% end %>
       </div>
       <div class="post-content-35">
         <%= truncate(post.content, length: 35, separator: ' ') %>
