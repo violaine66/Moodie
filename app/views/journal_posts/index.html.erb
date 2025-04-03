@@ -13,6 +13,12 @@
       <div class="post-date">
         <%= post.date %>
       </div>
+      <div class="emoji-post">
+          <% mood = Mood.find_by(date: post.date) %>
+            <% if mood.present? %>
+              <img src="<%= mood.emoji_url %>" alt="Emoji humeur" class="mood-emoji">
+            <% end %>
+      </div>
       <div class="post-content-35">
         <%= truncate(post.content, length: 35, separator: ' ') %>
       </div>
