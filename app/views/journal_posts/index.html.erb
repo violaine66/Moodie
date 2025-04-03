@@ -17,7 +17,6 @@
         <% @last_moods.each do |date, mood| %>
             <% if mood.present? && mood.date == post.date %>
               <img src="<%= mood.emoji_url %>" alt="Emoji humeur" class="mood-emoji">
-             
             <% end %>
           <% end %>
       </div>
