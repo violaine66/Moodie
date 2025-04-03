@@ -1,3 +1,63 @@
 .container-post{
   min-height: calc(100vh - 70px);
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-post-show{
+  background-color: rgba(251, 192, 178, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 80%;
+  min-height: 500px;
+  margin-bottom: 130px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+}
+
+.post-date{
+  margin-top: 20px;
+}
+
+.post-content{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76%;
+  line-height: 1.8;
+}
+
+.container-links-post{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.container-link-post{
+  width: 110px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.nav-link-post-show{
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
 }
