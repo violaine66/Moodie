@@ -1,6 +1,6 @@
 .container-journal{
   min-height: calc(100vh - 70px);
-  background-color: #F5F5F5;
+  background-color: #F5F5F5 !important;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .emoji-post {
   position: absolute;
   top : 10px;
