@@ -1,10 +1,12 @@
 .home {
   background-color: rgb(127, 162, 182);
   opacity: .9;
-  min-height: calc(100vh - 70px);
+  // min-height: calc(100vh - 90px);
   position : relative;
   }
-
+.container-question {
+  min-height: calc(100vh - 70px);
+}
   #citation {
     position: absolute;
     bottom: 47%;
