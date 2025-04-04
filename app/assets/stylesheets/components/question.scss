@@ -1,12 +1,10 @@
 .home {
   background-color: rgb(127, 162, 182);
   opacity: .9;
-  // min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 200px);
   position : relative;
   }
-.container-question {
-  min-height: calc(100vh - 70px);
-}
+
   #citation {
     position: absolute;
     bottom: 47%;
@@ -27,8 +25,6 @@
     margin-top: 40px;
     padding: 20px;
     border-radius: 15px;
-    // rgb(219, 219, 219)
-    // rgb(199, 200, 204)
     border: 3px solid rgb(219, 219, 219) ;
     box-shadow: 4px 4px 0px rgb(219, 219, 219), -4px -4px 0px rgb(219, 219, 219), 4px -4px 0px rgb(219, 219, 219), -4px 4px 0px rgb(219, 219, 219);
     position: relative;
