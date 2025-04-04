@@ -82,7 +82,7 @@ puts "Création des ressources..."
 
 Ressource.create!(
   title: "La dépendance aux écrans : comment savoir si tu es accro ?",
-  description: "Les écrans font partie de ta vie quotidienne, mais est-ce que tu te sens parfois dépendant de ton téléphone ou de la console de jeux ? Cet article t'explique les signes qui montrent que tu pourrais être accro, pourquoi c’est un problème et comment équilibrer ton temps entre les écrans et d'autres activités.",
+
   url: "#",
   category: "Bien-être numérique",
   adress: nil,
@@ -93,7 +93,7 @@ puts "Ressource 'La dépendance aux écrans : comment savoir si tu es accro ?' c
 
 Ressource.create!(
   title: "S'accepter comme on est : Le corps des filles et les normes de beauté",
-  description: "Tu te sens parfois mal dans ta peau à cause de ton image corporelle ? Cet article te parle des pressions sociales que subissent les filles pour ressembler à des standards de beauté. Apprends à t’accepter et à aimer ton corps tel qu’il est, avec des conseils pratiques pour retrouver ta confiance en toi.",
+
   url: "#",
   category: "Image de soi et confiance",
   adress: nil,
@@ -104,7 +104,7 @@ puts "Ressource 'S'accepter comme on est : Le corps des filles et les normes de 
 
 Ressource.create!(
   title: "Le harcèlement scolaire : comment le reconnaître et s'en sortir",
-  description: "Le harcèlement scolaire, c’est difficile à vivre. Si tu te sens mal à l’école à cause d’autres élèves, cet article t'explique comment reconnaître les signes du harcèlement, ce que tu peux faire pour te protéger et comment demander de l’aide à un adulte ou à un professionnel.",
+ 
   url: "#",
   category: "Soutien contre le harcèlement",
   adress: nil,
@@ -146,26 +146,5 @@ Ressource.create!(
 )
 puts "Ressource 'L'Écoute Santé Jeunes' créée avec succès !"
 
-Ressource.create!(
-  title: "SOS Suicide : Prévention et aide",
-  description: "SOS Suicide Phénix est une organisation qui offre des ressources et un accompagnement pour les jeunes en difficulté, y compris ceux ayant des pensées suicidaires. Ce site propose des articles, des ressources d'aide et des moyens de contacter des professionnels.",
-  url: "#",
-  category: "Soutien et prévention",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'SOS Suicide Phénix' créée avec succès !"
-
-Ressource.create!(
-  title: "Psycom - Ressources Santé Mentale pour les jeunes",
-  description: "Psycom est un site qui propose des articles et des ressources concernant la santé mentale. Il permet aux jeunes de mieux comprendre leurs émotions et de trouver des moyens de soutien.",
-  url: "https://www.psycom.org",
-  category: "Articles et Informations",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Psycom - Ressources Santé Mentale' créée avec succès !"
 
 puts "Toutes les ressources ont été créées avec succès !"
