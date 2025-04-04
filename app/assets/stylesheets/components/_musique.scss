@@ -14,6 +14,7 @@
   position: relative;
   font-family: quicksand;
   font-weight: bold;
+  font-size: 17px;
   background-color: rgb(251, 192, 178);
   opacity: 0.9;
 }
@@ -97,8 +98,8 @@
   margin-top: 15px;
   margin-right: 10px;
   border-radius: 20px;
-  min-height: 89px;
-  max-height: 80px;
+  min-height: 100px;
+  max-height: 100px;
   width: 180px;
   padding: 8px;
   font-size: 17px;
@@ -119,3 +120,4 @@
   color: black;
   align-self: center;
 }
+
