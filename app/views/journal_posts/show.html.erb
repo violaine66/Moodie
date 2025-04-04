@@ -2,7 +2,7 @@
 <div class="container-post">
   <div class="title-card"><h1>Mon post</h1></div>
     <div class="container-post-show">
-      <h2 class="post-date"><%= @journal_post.date %></h2>
+      <h2 class="post-date"><%= @journal_post.date.strftime("%d/%m/%Y") %></h2>
       <p class="post-content"><%= @journal_post.content %></p>
       <div class="container-links-post">
         <div class="container-link-post">
