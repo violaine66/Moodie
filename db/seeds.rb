@@ -24,6 +24,13 @@ user = User.create!(
 )
 puts "Utilisateur 'test@example.com' créé avec succès !"
 
+user = User.create!(
+  email: "lou@app.fr",
+  password: "loulou",
+  password_confirmation: "loulou"
+)
+puts "Utilisateur 'lou@app.fr' créé avec succès !"
+
 # Création des JournalPosts pour les 7 derniers jours avec un user_id valide
 puts "Création des JournalPosts pour les 7 derniers jours..."
 
@@ -104,7 +111,7 @@ puts "Ressource 'S'accepter comme on est : Le corps des filles et les normes de 
 
 Ressource.create!(
   title: "Le harcèlement scolaire : comment le reconnaître et s'en sortir",
- 
+
   url: "#",
   category: "Soutien contre le harcèlement",
   adress: nil,
