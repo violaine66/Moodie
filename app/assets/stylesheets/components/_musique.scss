@@ -10,13 +10,12 @@
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 4px 4px 0px #7FA2B6, -4px -4px 0px #7FA2B6, 4px -4px 0px #7FA2B6, -4px 4px 0px #7FA2B6;
+  box-shadow: 4px 4px 0px rgb(251, 192, 178), -4px -4px 0px rgb(251, 192, 178), 4px -4px 0px rgb(251, 192, 178), -4px 4px 0px rgb(251, 192, 178);
   position: relative;
   font-family: quicksand;
   font-weight: bold;
-  background-color: #7FA2B6;
+  background-color: rgb(251, 192, 178);
   opacity: 0.9;
-  color: white;
 }
 .besoin::after {
   content: "";
@@ -27,7 +26,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 20px solid #7FA2B6;
+  border-top: 20px solid rgb(251, 192, 178);
 }
 
 .musique-card {
@@ -43,7 +42,7 @@
   max-height: 100px;
   width: 180px;
   padding: 8px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   align-items: center;
   text-align: center;
@@ -72,6 +71,7 @@
 .relaxation-container {
   display: flex;
   justify-content: center;
+  justify-content: flex-start;
 
   }
   .relaxation {
@@ -82,9 +82,40 @@
     opacity: 0.9;
     color: white;
     height: 60px;
-    width: 40%;
+    width: 100px;
     margin-top: 50px;
     margin-bottom: 8px;
     text-align: center;
     align-content: center;
   }
+.relaxation-card {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  min-height: 89px;
+  max-height: 80px;
+  width: 180px;
+  padding: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+.relaxation-card i.fa-solid {
+  color:rgb(251, 192, 178);
+  font-size: 40px;
+}
+.relaxation-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  align-self: center;
+}
