@@ -1,11 +1,10 @@
 .new-mood {
   position: relative;
-  padding: 25px;
+  padding: 15px;
   border-radius: 25px;
   box-shadow: 4px 4px 0px rgb(148, 150, 158), -4px -4px 0px rgb(148, 150, 158), 4px -4px 0px rgb(148, 150, 158), -4px 4px 0px rgb(148, 150, 158);
-  width: 100%;
-  margin-top: 80px;
-  margin-bottom: 10px;
+  width: 90%;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
@@ -38,7 +37,7 @@ img.logo {
 .date {
   text-align: center;
   background-color: #7FA2B6 ;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 12px;
 }
 #mood-slider {
@@ -72,7 +71,7 @@ input[type="range"]::-moz-range-thumb {
 .btn-new-mood {
   background-color: rgb(251, 192, 178);
   border-radius: 4px;
-  padding:10px;
+  padding: 10px;
   border: none;
   font-size: 12px;
   font-weight: bold;
@@ -128,7 +127,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 992px) {
   .new-mood {
     max-width: 90%; // Réduit la largeur pour s'adapter aux petits écrans
-    padding: 20px; // Réduit un peu le padding
+    padding: 15px; // Réduit un peu le padding
   }
 
   .mood-text {
@@ -152,7 +151,7 @@ input[type="range"]::-moz-range-thumb {
     width: fit-content;
     min-width: 120px; // Assure une taille minimale
     text-align: center;
-    margin: 15px auto; // Centre le bouton
+    margin: 10px auto; // Centre le bouton
   }
 }
 @media (max-width: 768px) {
