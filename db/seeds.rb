@@ -82,7 +82,7 @@ puts "Création des ressources..."
 
 Ressource.create!(
   title: "La dépendance aux écrans : comment savoir si tu es accro ?",
-  description: "Les écrans font partie de ta vie quotidienne, mais est-ce que tu te sens parfois dépendant de ton téléphone ou de la console de jeux ?
+
   url: "#",
   category: "Bien-être numérique",
   adress: nil,
@@ -93,7 +93,7 @@ puts "Ressource 'La dépendance aux écrans : comment savoir si tu es accro ?' c
 
 Ressource.create!(
   title: "S'accepter comme on est : Le corps des filles et les normes de beauté",
-  description: "Tu te sens parfois mal dans ta peau à cause de ton image corporelle ? Cet article te parle des pressions sociales que subissent les filles pour ressembler à des standards de beauté"
+
   url: "#",
   category: "Image de soi et confiance",
   adress: nil,
@@ -104,7 +104,7 @@ puts "Ressource 'S'accepter comme on est : Le corps des filles et les normes de 
 
 Ressource.create!(
   title: "Le harcèlement scolaire : comment le reconnaître et s'en sortir",
-  description: "Le harcèlement scolaire, c’est difficile à vivre. Si tu te sens mal à l’école à cause d’autres élèves, cet article t'explique comment reconnaître les signes du harcèlement, ce que tu peux faire pour te protéger et comment demander de l’aide à un adulte ou à un professionnel.",
+ 
   url: "#",
   category: "Soutien contre le harcèlement",
   adress: nil,
