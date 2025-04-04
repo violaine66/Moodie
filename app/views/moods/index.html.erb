@@ -1,15 +1,15 @@
 <%= render "shared/banner2" %>
 <div class="container text-center" id="calendar">
   <div class="title-card"><h1>Mon calendrier</h1></div>
-    <div class="justify-content-center">
-      <div class="calendar-container col-10 col-lg-6">
-        <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
-          <div class="day-container">
-            <div class="day-number"><%= date.day %></div>
-            <div class="mood-circle-wrapper">
-              <% if moods.any? %>
-                <% last_mood = moods.last %>  <%# Prend la dernière humeur enregistrée %>
-                <div class="mood-circle">
+  <div class="justify-content-center">
+    <div class="calendar-container col-10 col-lg-6">
+      <%= month_calendar(locale: :fr, events: @moods) do |date, moods| %>
+        <div class="day-container">
+          <div class="day-number"><%= date.day %></div>
+          <div class="mood-circle-wrapper">
+            <% if moods.any? %>
+              <% last_mood = moods.last %>  <%# Prend la dernière humeur enregistrée %>
+              <div class="mood-circle">
                 <% journal_post = JournalPost.find_by(date: date) %>
                 <% if journal_post.present? %>
                   <%= link_to journal_post_path(journal_post) do %>
@@ -21,12 +21,35 @@
                   <% end %>
                 <% end %>
               </div>
-              <% else %>
-                <div class="mood-circle empty"></div> <%# Cercle invisible mais qui prend de la place %>
-              <% end %>
-            </div>
+            <% else %>
+              <div class="mood-circle empty"></div> <%# Cercle invisible mais qui prend de la place %>
+            <% end %>
           </div>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     </div>
+  </div>
+</div>
+
+<div class="container-frequence ms-2 mt-5">
+  <p class="text-center">Ces 3 dernières semaines</p>
+  <% three_weeks_ago = 3.weeks.ago.to_date %>
+  <% emoji_counts = Mood.where(date: three_weeks_ago..Date.today).group_by(&:emoji_url) %>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <% emoji_counts.each do |emoji_url, moods| %>
+      <div class="frequence-item text-center mx-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="me-2">
+            <%= moods.size %>
+          </div>
+          <% if emoji_url.present? %>
+            <img src="<%= emoji_url %>" alt="Mood emoji" class="emoji-frequence">
+          <% else %>
+            <span class="mood-emoji-placeholder">Pas d'emoji disponible</span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
