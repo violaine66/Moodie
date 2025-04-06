@@ -1,7 +1,12 @@
-// app/javascript/video_modal.js
-
 document.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('videoModal');
+
+  // Vérification si l'élément modal existe
+  if (!modal) {
+    console.error("Le modal avec l'ID 'videoModal' n'a pas été trouvé !");
+    return;
+  }
+
   const iframe = document.getElementById('videoIframe');
 
   // Lorsque la modale est ouverte, ajoute l'URL de la vidéo à l'iframe
