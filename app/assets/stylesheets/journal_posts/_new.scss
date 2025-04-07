@@ -65,29 +65,3 @@ textarea.form-control {
   background-color: #7FA2B6;
   border-color: #7FA2B6;
 }
-
-.btn-primary:hover {
-  background-color: #68899e;
-  border-color: #5a7a8d;
-}
-
-.btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #6c757d;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .buttons-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-  }
-}
