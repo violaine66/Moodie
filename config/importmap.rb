@@ -10,4 +10,3 @@ pin "@popperjs/core", to: "popper.js", preload: true
 pin "typed.js" # @2.1.0
 # config/importmap.rb
 
-pin "video_modal", to: "video_modal.js", preload: true
