@@ -1,39 +1,87 @@
 <%= render "shared/banner2" %>
 <div class="container-musique text-center">
   <div class="title-card"><h1>Ma musique</h1></div>
+   <div class="besoin">
+      <span data-controller="typed" data-typed-sentences-value ='["De quelle playlist as-tu besoin?"]'></span>
+    </div>
   <div class="musiques">
     <div class="musique-card ">
       <p><a href="https://www.youtube.com/watch?v=JnfqyASVii8&list=PL6w_CtlL0NtgvOrH5iaZ3rfvn7BhVCIzG" class = "text-dark text-decoration-none" target="_blank">Pour me motiver</a></p>
       <a href="https://www.youtube.com/watch?v=JnfqyASVii8&list=PL6w_CtlL0NtgvOrH5iaZ3rfvn7BhVCIzG" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
     </div>
     <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Pour me concentrer</a></p>
-      <a href="#"target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-    </div>
-
-    <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Pour me reposer</a></p>
-      <a href="#" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-    </div>
-    <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Pour me détendre</a></p>
-      <a href="#" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+      <p><a href = "https://youtube.com/playlist?list=PLuylFVhpBoHbPzOqEEdmemt8WJ2nv34sm&si=R4HcFh2h6ahAfpMs" class = " text-dark text-decoration-none" target = "_blank">Pour me détendre</a></p>
+      <a href="https://youtube.com/playlist?list=PLuylFVhpBoHbPzOqEEdmemt8WJ2nv34sm&si=R4HcFh2h6ahAfpMs" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
     </div>
      <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Pour me réveiller</a></p>
-      <a href="#" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+      <p><a href = "https://youtu.be/TepRqxy9IWc?si=IWxqaEUIzgcsB_5z" class = " text-dark text-decoration-none" target = "_blank">Pour me réveiller</a></p>
+      <a href="https://youtu.be/TepRqxy9IWc?si=IWxqaEUIzgcsB_5z" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
     </div>
     <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Pour danser</a></p>
-      <a href="#" target="_blank"><i class="fa-solid fa-circle-play ms-4 me-0"></i></a>
+      <p><a href = "https://youtube.com/playlist?list=PL_Nwly7OeYUI-p9Vg2icFB82ontzjL_T6&si=3Qk70byzaFJSYQfx" class = " text-dark text-decoration-none" target = "_blank">Pour faire du sport</a></p>
+      <a href="https://youtube.com/playlist?list=PL_Nwly7OeYUI-p9Vg2icFB82ontzjL_T6&si=3Qk70byzaFJSYQfx" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
     </div>
-    <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Cohérence cardiaque</a></p>
-      <a href="#" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+  </div>
+
+  <p class = "relaxation">Relaxation</p>
+    <div class="relaxation-container">
+      <div type = "button" class="relaxation-card" data-bs-toggle="tooltip" data-bs-placement="top" title="La cohérence cardiaque, c'est une technique de respiration qui aide à réduire le stress en respirant lentement et régulièrement. Cela calme ton corps et ton esprit.">
+        <p>
+          <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-url="https://www.youtube.com/embed/u-RAqt7p-3U">
+            Cohérence cardiaque
+          </a>
+        </p>
+        <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-url= "https://www.youtube.com/embed/u-RAqt7p-3U">
+          <i class="fa-solid fa-circle-play"></i>
+        </a>
+      </div>
+
+      <div class="relaxation-card">
+        <a href = "https://youtu.be/Id7NcfkXLfU?si=K_-URcqsIWllBguQ" class = " text-dark text-decoration-none" target = "_blank">Sons de la nature</a>
+        <a href="https://youtu.be/Id7NcfkXLfU?si=K_-URcqsIWllBguQ" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+      </div>
     </div>
-    <div class="musique-card">
-      <p><a href = "#" class = " text-dark text-decoration-none" target = "_blank">Sons de la nature</a></p>
-      <a href="#" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+</div>
+
+<!--Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Vidéo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="videoIframe" width="100%" height="520" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>
+
+<%# mon script js %>
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('videoModal');
+
+  // Vérifie si le modal existe avant d'ajouter les écouteurs d'événements
+  if (!modal) {
+    console.error("Le modal avec l'ID 'videoModal' n'a pas été trouvé !");
+    return;
+  }
+
+  const iframe = document.getElementById('videoIframe');
+
+  // Lorsque la modale est ouverte, ajoute l'URL de la vidéo à l'iframe
+  modal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget; // Le lien cliqué
+    const videoUrl = button.getAttribute('data-video-url'); // Récupère l'URL de la vidéo
+    iframe.src = videoUrl; // Assigne l'URL de la vidéo à l'iframe
+  });
+
+  // Lorsque la modale est fermée, réinitialise l'iframe pour stopper la vidéo
+  modal.addEventListener('hidden.bs.modal', function () {
+    iframe.src = ""; // Vide l'iframe pour stopper la vidéo
+  });
+});
+
+ </script>

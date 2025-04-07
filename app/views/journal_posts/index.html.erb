@@ -11,13 +11,14 @@
   <% @journal_posts.each do |post| %>
     <%= link_to journal_post_path(post), class: "post-card-index" do %>
       <div class="post-date">
-        <%= post.date %>
+        <%= post.date.strftime("%d/%m/%Y") %>
       </div>
       <div class="emoji-post">
-          <% mood = Mood.find_by(date: post.date) %>
-            <% if mood.present? %>
+        <% @last_moods.each do |date, mood| %>
+            <% if mood.present? && mood.date == post.date %>
               <img src="<%= mood.emoji_url %>" alt="Emoji humeur" class="mood-emoji">
             <% end %>
+          <% end %>
       </div>
       <div class="post-content-35">
         <%= truncate(post.content, length: 35, separator: ' ') %>
