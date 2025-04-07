@@ -8,17 +8,17 @@
         <div class="container-link-post">
           <%= link_to journal_post_path(@journal_post),
             data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
-            class: "nav-link-post-show" do %>
+            class: "nav-link-post-show text-dark" do %>
             <i class="fa-solid fa-trash"></i> Supprimer
           <% end %>
         </div>
         <div class="container-link-post">
-          <%= link_to edit_journal_post_path(@journal_post), class: "nav-link-post-show" do %>
+          <%= link_to edit_journal_post_path(@journal_post), class: "nav-link-post-show text-dark" do %>
             <i class="fa-solid fa-pencil"></i> Modifier
           <% end %>
         </div>
         <div class="container-link-post">
-          <%= link_to journal_posts_path, class: "nav-link-post-show" do %>
+          <%= link_to journal_posts_path, class: "nav-link-post-show text-dark" do %>
             <i class="fa-solid fa-arrow-left"></i> Journal
           <% end %>
         </div>
