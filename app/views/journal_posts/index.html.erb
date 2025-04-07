@@ -9,7 +9,7 @@
     <% end %>
   </div>
   <% @journal_posts.each do |post| %>
-    <%= link_to journal_post_path(post), class: "post-card-index" do %>
+    <%= link_to journal_post_path(post), class: "post-card-index text-dark" do %>
       <div class="post-date">
         <%= post.date.strftime("%d/%m/%Y") %>
       </div>
