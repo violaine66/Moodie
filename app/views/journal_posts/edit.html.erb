@@ -6,7 +6,7 @@
   </div>
 
   <%= form_with model: @journal_post, local: true, html: { class: "post-form" } do |form| %>
-    <div class="card post-card-edit">
+    <div class="card post-card-new">
       <div class="card-body">
         <div class="form-group">
           <%= form.label :date, "Date", class: "form-label" %>
@@ -20,9 +20,9 @@
       </div>
     </div>
 
-    <div class="buttons-container d-flex justify-content-center gap-3 mt-3">
-      <%= form.submit "Mettre à jour", class: "btn btn-lg btn-primary shadow-sm px-4 py-2 fw-bold" %>
-      <%= link_to "Annuler", journal_posts_path, class: "btn btn-lg btn-outline-secondary shadow-sm px-4 py-2 fw-bold" %>
+    <div class="buttons-container-custom">
+      <%= form.submit "Mettre à jour", class: "btn btn-lg btn-primary" %>
+      <%= link_to "Annuler", journal_posts_path, class: "btn btn-lg btn-outline-secondary" %>
     </div>
   <% end %>
 </div>
