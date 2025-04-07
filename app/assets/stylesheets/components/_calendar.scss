@@ -13,7 +13,13 @@
   height: 60px; /* Même hauteur pour tous */
 }
 
-.icone-calendar {
+.icone-calendar{
+  color: #4A4A4A;
+}
+.icone-calendar:hover {
+  color: #4A4A4A;
+}
+.simple-calendar i:hover {
   color: #4A4A4A;
 }
 .day-number {
