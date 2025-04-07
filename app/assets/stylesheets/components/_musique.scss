@@ -1,34 +1,57 @@
 .musiques {
-  margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4px;
-  width: 100%;
+  width: 90%;
   justify-items: center;
+}
+.besoin {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px rgb(251, 192, 178), -4px -4px 0px rgb(251, 192, 178), 4px -4px 0px rgb(251, 192, 178), -4px 4px 0px rgb(251, 192, 178);
+  position: relative;
+  font-family: quicksand;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: rgb(251, 192, 178);
+  opacity: 0.9;
+}
+.besoin::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid rgb(251, 192, 178);
 }
 
 .musique-card {
   display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   flex-direction: row;
   justify-content: center;
   align-self: center;
-  margin-top: 40px;
-  margin-right: 35px;
+  margin-top: 30px;
+  margin-right: 10px;
   border-radius: 20px;
   min-height: 100px;
   max-height: 100px;
   width: 180px;
   padding: 8px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   align-items: center;
   text-align: center;
+  align-content: center;
 }
-
 .musique-card i.fa-solid {
-  color: rgb(233, 142, 141);
+  color:rgb(251, 192, 178);
   font-size: 40px;
-  font-weight: bolder;
 }
 .musique-card a {
   display: flex;
@@ -45,4 +68,55 @@
   align-content: center;
   align-items: center;
   width: 100%;
+}
+.relaxation-container {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+
+  }
+  .relaxation {
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #7FA2B6;
+    opacity: 0.9;
+    color: white;
+    height: 60px;
+    width: 100px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    text-align: center;
+    align-content: center;
+  }
+.relaxation-card {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  min-height: 100px;
+  max-height: 100px;
+  width: 180px;
+  padding: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+.relaxation-card i.fa-solid {
+  color:rgb(251, 192, 178);
+  font-size: 40px;
+}
+.relaxation-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  align-self: center;
 }

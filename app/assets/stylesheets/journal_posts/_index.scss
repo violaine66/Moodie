@@ -1,6 +1,6 @@
 .container-journal{
   min-height: calc(100vh - 70px);
-  background-color: white;
+  background-color: #F5F5F5 !important;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -21,6 +21,7 @@
 }
 
 .post-card-index {
+  position: relative;
   width: 330px;
   height: 110px;
   background-color: rgba(251, 192, 178, 0.9);
@@ -40,6 +41,12 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.emoji-post {
+  position: absolute;
+  top : 10px;
+  right: 30px;
 }
 
 .post-date{
