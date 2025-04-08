@@ -1,23 +1,18 @@
 
-<div class="ressource-card d-flex flex-row mx-4 my-5 pt-3 px-3">
+<div class="ressource-card d-flex flex-row mx-4 mb-4 pt-3 px-3">
   <div class="">
     <div class="card-body">
-      <h5 class="card-title mb-2"><strong><%= ressource.title %></strong></h5>
+      <h5 class="card-title mb"><strong><%= ressource.title %></strong></h5>
       <p class="card-text small">
-        <% unless controller_name == "ressources" && action_name == "pres_de_chez_moi" %>
-          <%= ressource.description %>
-          <br>
-        <% end %>
-
         <% if not ressource.adress.nil? %>
           <i class="fa-solid fa-map-location-dot"></i>
           <%= ressource.adress %>
         <% end %>
       </p>
       <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
-        <%= link_to "Contacter", ressource.url, class: "btn btn-dark", target: "_blank" %>
+        <%= link_to "Contacter", ressource.url, class: "btn btn-outline-dark bg-white text-dark border-dark fw-bold shadow w-auto", target: "_blank" %>
       <% else %>
-        <%= link_to "Voir l'article", ressource.url, class: "btn btn-dark", target: "_blank" %>
+        <%= link_to "Voir l'article", ressource.url, class: "btn btn-outline-dark bg-white text-dark border-dark fw-bold shadow w-auto", target: "_blank" %>
       <% end %>
     </div>
   </div>

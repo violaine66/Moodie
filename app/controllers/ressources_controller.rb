@@ -1,8 +1,6 @@
 class RessourcesController < ApplicationController
-  before_action :set_ressources, only: %i[index pres_de_chez_moi]
-
   def index
-    @ressources.all
+    @ressources = Ressource.where(adress: nil)
     if params[:query].present?
       sql_subquery = "title ILIKE :query OR description ILIKE :query"
       @ressources = @ressources.where(sql_subquery, query: "%#{params[:query]}%")
@@ -15,12 +13,10 @@ class RessourcesController < ApplicationController
   end
 
   def pres_de_chez_moi
-    @pres_de_chez_moi = @ressources.where(category: "Près de chez moi")
-  end
-
-  private
-
-  def set_ressources
-    @ressources = Ressource.all
+    if params[:adress].present?
+      @pres_de_chez_moi = Ressource.near(params[:adress], 10) # 10 km
+    else
+      @pres_de_chez_moi = Ressource.where.not(adress: [nil, ""])
+    end
   end
 end
