@@ -305,6 +305,76 @@ Ressource.create!(
 )
 puts "Ressource 'Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer' créée avec succès !"
 
+# Ressources Près de chez moi
+puts" Création des ressources 'Près de chez moi'..."
+
+Ressource.create!(
+  title: "La Maison des Adolescents : Support et conseils",
+  description: "La Maison des Ados (MDA) est un dispositif d’aide pour les jeunes. Elle propose un espace d’accueil pour les jeunes de 11 à 21 ans, avec un soutien éducatif, social, juridique et psychologique. C’est un endroit où tu peux trouver des réponses à tes questions.",
+  url: "https://maisondesados-sdn.fr",
+  category: "Près de chez moi",
+  adress: "1 Rue Saint-Génois, 59000 Lille",
+  longitude: 3.068283,
+  latitude: 50.635719
+)
+puts "Ressource 'La Maison des Adolescents : Support et conseils' créée avec succès !"
+
+
+
+Ressource.create!(
+  title: "EPSM - Centre Médico Psychologique Lille Nord (Secteur infanto-juvénile)",
+  description: "Le CMP de Lille Nord propose des consultations de bilan et de suivi, avec des médecins pédopsychiatres et divers professionnels. Il offre des soins individuels (psychothérapie, psychomotricité, orthophonie), des thérapies familiales, ainsi que des ateliers thérapeutiques pour les enfants et leurs parents.",
+  url: "https://www.santepsyjeunes.fr",
+  category: "Près de chez moi",
+  adress: "7 rue du Nouveau Siècle, 59000 LILLE",
+  longitude: nil, # Longitude à ajouter si nécessaire
+  latitude: nil,  # Latitude à ajouter si nécessaire
+  phone_number: "03 20 21 94 50",
+  horaires: "Accès libre, contacter le CMP pour les horaires spécifiques."
+)
+puts "Ressource 'EPSM - Centre Médico Psychologique Lille Nord (Secteur infanto-juvénile)' créée avec succès !"
+
+
+
+Ressource.create!(
+  title: "Spiritek : Soutien pour jeunes confrontés à une addiction",
+  description: "Spiritek est une structure dédiée aux jeunes confrontés à une addiction avec ou sans substance. Elle propose des consultations spécialisées pour aider à surmonter les difficultés liées à l'usage de substances ou à d'autres formes d'addiction.",
+  url: "http://www.spiritek-asso.com/",
+  category: "Près de chez moi",
+  adress: "49 rue du Molinel, 59000 Lille",
+  longitude: nil, # Longitude à ajouter si nécessaire
+  latitude: nil,  # Latitude à ajouter si nécessaire
+  phone_number: "03 28 36 28 40",
+  horaires: "Sur rendez-vous, nous contacter"
+)
+puts "Ressource 'Spiritek : Soutien pour jeunes confrontés à une addiction' créée avec succès !"
+
+Ressource.create!(
+  title: "Cedragir (PAEJ) : Accueil et écoute pour les jeunes",
+  description: "Cedragir (PAEJ) propose un espace d'écoute pour les jeunes, afin de les accompagner dans leurs difficultés personnelles, sociales, scolaires ou familiales. L'accès est facilité par les transports en commun (Métro ligne A et tram) et un parking réservé au public.",
+  url: "https://www.arpade.org/point-ecoute/",
+  category: "Près de chez moi"
+  adress: "14 rue Alfred de Musset, 59000 Lille",
+  longitude: nil, # Longitude à ajouter si nécessaire
+  latitude: nil,  # Latitude à ajouter si nécessaire
+  phone_number: "320932121",
+  horaires: "Du Mardi au Vendredi de 14:00 à 18:00, avec ou sans rendez-vous. Possibilité d'être reçu sur rendez-vous à d'autres horaires."
+)
+puts "Ressource 'Cedragir (PAEJ) : Accueil et écoute pour les jeunes' créée avec succès !"
+
+
+Ressource.create!(
+  title: "CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites pour les étudiants",
+  description: "Le CROUS Lille Nord-Pas-de-Calais propose des consultations psychologiques gratuites lors des Happsy Hours. Ces consultations individuelles avec un psychologue sont offertes aux étudiants résidents du CROUS Lille Nord-Pas-de-Calais, en toute confidentialité.",
+  url: "https://www.crous-lille.fr", # Remplacer par l'URL correcte du CROUS s'il y en a une pour les Happsy Hours
+  category:"Près de chez moi",
+  adress: "Résidence Albert Châtelet, 4 rue Frédéric Combemale, 59000 Lille",
+  longitude: nil, # Longitude à ajouter si nécessaire
+  latitude: nil,  # Latitude à ajouter si nécessaire
+  phone_number: nil, # Pas de numéro de téléphone précisé
+  horaires: "Mardi de 18h à 21h, consultations avec ou sans rendez-vous"
+)
+puts "Ressource 'CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites' créée avec succès !"
 
 
 
