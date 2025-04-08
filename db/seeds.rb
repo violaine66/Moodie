@@ -147,15 +147,6 @@ Ressource.create!(
 )
 puts "Ressource 'Les signes de la dépression chez les adolescents : quand demander de l'aide ?' créée avec succès !"
 
-Ressource.create!(
-  title: "La pleine conscience pour les jeunes : comment l'intégrer dans sa routine ?",
-  url: "#",
-  category: "Relaxation et gestion du stress",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'La pleine conscience pour les jeunes : comment l'intégrer dans sa routine ?' créée avec succès !"
 
 Ressource.create!(
   title: "Prendre soin de son sommeil : pourquoi c'est essentiel pour la santé mentale ?",
@@ -207,15 +198,6 @@ Ressource.create!(
 )
 puts "Ressource 'L'impact de l'anxiété sociale : comment surmonter la peur du jugement ?' créée avec succès !"
 
-Ressource.create!(
-  title: "Construire des relations saines : reconnaître les comportements toxiques et se protéger",
-  url: "#",
-  category: "Relations et bien-être émotionnel",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Construire des relations saines : reconnaître les comportements toxiques et se protéger' créée avec succès !"
 
 Ressource.create!(
   title: "Vivre une rupture amoureuse : comment se reconstruire après la fin d'une relation ?",
@@ -247,25 +229,7 @@ Ressource.create!(
 )
 puts "Ressource 'Le stress des examens : comment mieux gérer la pression et réussir sereinement ?' créée avec succès !"
 
-Ressource.create!(
-  title: "Le tabou de la santé mentale : pourquoi en parler reste encore difficile ?",
-  url: "#",
-  category: "Sensibilisation et déstigmatisation",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Le tabou de la santé mentale : pourquoi en parler reste encore difficile ?' créée avec succès !"
 
-Ressource.create!(
-  title: "Casser le tabou : pourquoi il est important de parler de ses problèmes de santé mentale ?",
-  url: "#",
-  category: "Sensibilisation et déstigmatisation",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Casser le tabou : pourquoi il est important de parler de ses problèmes de santé mentale ?' créée avec succès !"
 
 Ressource.create!(
   title: "Le déclic pour consulter un psy : comment savoir qu'il est temps de demander de l'aide ?",
@@ -277,25 +241,7 @@ Ressource.create!(
 )
 puts "Ressource 'Le déclic pour consulter un psy : comment savoir qu'il est temps de demander de l'aide ?' créée avec succès !"
 
-Ressource.create!(
-  title: "Se libérer du stigmate : comment ne plus avoir honte de consulter un professionnel ?",
-  url: "#",
-  category: "Déstigmatisation et empowerment",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Se libérer du stigmate : comment ne plus avoir honte de consulter un professionnel ?' créée avec succès !"
 
-Ressource.create!(
-  title: "Les idées reçues sur les psychologues : démystifier la thérapie et comprendre ce qui se cache derrière",
-  url: "#",
-  category: "Sensibilisation et éducation",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Les idées reçues sur les psychologues : démystifier la thérapie et comprendre ce qui se cache derrière' créée avec succès !"
 
 Ressource.create!(
   title: "Vaincre la peur de consulter : comment franchir le premier pas vers une meilleure santé mentale ?",
@@ -326,27 +272,6 @@ Ressource.create!(
   latitude: nil
 )
 puts "Ressource 'Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer' créée avec succès !"
-
-Ressource.create!(
-  title: "Le rôle du psychologue dans le bien-être mental des jeunes : quand faut-il consulter ?",
-  url: "#",
-  category: "Soutien psychologique et prévention",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Le rôle du psychologue dans le bien-être mental des jeunes : quand faut-il consulter ?' créée avec succès !"
-
-Ressource.create!(
-  title: "Distinguer la souffrance mentale normale de celle qui nécessite une aide professionnelle",
-  url: "#",
-  category: "Sensibilisation et gestion des émotions",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Distinguer la souffrance mentale normale de celle qui nécessite une aide professionnelle' créée avec succès !"
-
 
 
 
