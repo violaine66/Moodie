@@ -306,7 +306,7 @@ Ressource.create!(
   description: "La Maison des Ados (MDA) est un dispositif d’aide pour les jeunes. Elle propose un espace d’accueil pour les jeunes de 11 à 21 ans, avec un soutien éducatif, social, juridique et psychologique. C’est un endroit où tu peux trouver des réponses à tes questions.",
   url: "https://maisondesados-sdn.fr",
   category: "Près de chez moi",
-  adress: nil,
+  adress: "1 Rue Saint-Génois, 59000 Lille",
   longitude: nil,
   latitude: nil
 )
@@ -317,7 +317,7 @@ Ressource.create!(
   description: "Le CMP de Lille Nord propose des consultations de bilan et de suivi, avec des médecins pédopsychiatres et divers professionnels. Il offre des soins individuels (psychothérapie, psychomotricité, orthophonie), des thérapies familiales, ainsi que des ateliers thérapeutiques pour les enfants et leurs parents.",
   url: "https://www.santepsyjeunes.fr",
   category: "Près de chez moi",
-  adress: nil,
+  adress: "7 rue du Nouveau Siècle, 59000 LILLE",
   longitude: nil,
   latitude: nil
 )
@@ -328,7 +328,7 @@ Ressource.create!(
   description: "Spiritek est une structure dédiée aux jeunes confrontés à une addiction avec ou sans substance. Elle propose des consultations spécialisées pour aider à surmonter les difficultés liées à l'usage de substances ou à d'autres formes d'addiction.",
   url: "http://www.spiritek-asso.com/",
   category: "Près de chez moi",
-  adress: nil,
+  adress: "49 rue du Molinel, 59000 Lille",
   longitude: nil,
   latitude: nil
 )
@@ -339,7 +339,7 @@ Ressource.create!(
   description: "Cedragir (PAEJ) propose un espace d'écoute pour les jeunes, afin de les accompagner dans leurs difficultés personnelles, sociales, scolaires ou familiales. L'accès est facilité par les transports en commun (Métro ligne A et tram) et un parking réservé au public.",
   url: "https://www.arpade.org/point-ecoute/",
   category: "Près de chez moi",
-  adress: nil,
+  adress: "14 rue Alfred de Musset, 59000 Lille",
   longitude: nil,
   latitude: nil
 )
@@ -350,7 +350,7 @@ Ressource.create!(
   description: "Le CROUS Lille Nord-Pas-de-Calais propose des consultations psychologiques gratuites lors des Happsy Hours. Ces consultations individuelles avec un psychologue sont offertes aux étudiants résidents du CROUS Lille Nord-Pas-de-Calais.",
   url: "https://www.crous-lille.fr",
   category: "Près de chez moi",
-  adress: nil,
+  adress: "Résidence Albert Châtelet, 4 rue Frédéric Combemale, 59000 Lille",
   longitude: nil,
   latitude: nil
 )
