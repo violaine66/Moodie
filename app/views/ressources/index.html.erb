@@ -1,8 +1,17 @@
 <%= render "shared/banner2" %>
 <div class="container text-center">
   <div class="title-card"><h1>Mon kit de secours</h1></div>
-    <div class="ressources-container col-12 col-lg-6">
-
+    <div class="ressources-container col-12 col-lg-6"  data-controller="search-ressources">
+      <div class="d-flex justify-content-center">
+        <%= form_with url: ressources_path, method: :get, html: { class: "ressources-input col-8 margin-auto", data: {search_ressources_target: "form"}} do |f|%>
+          <%= f.text_field :query, class: "form-control", placeholder:
+                    "Chercher un article...", value: params[:query],
+                    data: {
+                      search_ressources_target: "input",
+                      action: "keyup->search-ressources#update"
+                    } %>
+        <% end %>
+      </div>
       <div class="ressource-card mx-4 my-4 p-3">
         <i class="fa-solid fa-phone"></i> <strong>Harcèlement scolaire</strong> <span style="color: #FF0000;">30 20</span>
         <br>
@@ -11,46 +20,21 @@
         <i class="fa-solid fa-phone"></i> <strong>Prévention Suicide</strong> <span style="color: #FF0000;">31 14</span>
       </div>
 
-      <div class="" data-controller="search-ressources">
-        <div class="card mx-4 align-items-center d-flex flex-column" id="search-card">
-
-          <div class="search-card-header rounded-2">
-            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active fw-bold rounded-3" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Recherche</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link fw-bold rounded-3" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Près de chez moi</button>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-body tab-content">
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-              <h5 class="card-title"><strong>Chercher parmi les articles</strong></h5>
-              <%= form_with url: ressources_path, method: :get, html: { class: "ressources-input", data: {search_ressources_target: "form"}} do |f|%>
-                <%= f.text_field :query, class: "form-control", placeholder:
-                          "Chercher un terme...", value: params[:query],
-                          data: {
-                            search_ressources_target: "input",
-                            action: "keyup->search-ressources#update"
-                          } %>
-              <% end %>
+      <div class="card mx-4 mb-3 align-items-center d-flex flex-column" id="search-card">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Près de chez moi</strong></h5>
+          <%= form_with url: pres_de_chez_moi_ressources_path, method: :get do |f|%>
+            <div class="d-flex gap-2 align-items-center">
+              <%= f.text_field :adress, class: "form-control bg-white" %>
+              <%= f.submit "Rechercher", class: "btn btn-outline-dark btn-sm bg-white text-dark fw-bold shadow-sm w-auto" %>
             </div>
-
-            <div class="tab-pane fade" id="tab2" role="tabpanel">
-              <h5 class="card-title"><strong>Ressources près de chez moi</strong></h5>
-              <p class="card-text small">Retrouve les ressources à côté de chez toi en suivant le bouton ci-après!</p>
-              <%= link_to "Recherche", pres_de_chez_moi_ressources_path, class: "btn btn-secondary" %>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex flex-column " >
-          <%= render 'list', ressources: @ressources %>
+          <% end %>
         </div>
       </div>
 
+      <div class="d-flex flex-column mt-4" >
+        <%= render 'list', ressources: @ressources %>
+      </div>
 
   </div>
 </div>
