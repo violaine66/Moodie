@@ -7,6 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
 # Suppression des anciens posts
 # Suppression des anciens posts et utilisateurs
 puts "Suppression des anciens posts et utilisateurs..."
@@ -91,18 +92,17 @@ Ressource.create!(
   title: "Santé mentale : Comment en parler en toute décontraction ?",
   url: "https://www.santepsyjeunes.fr/j-ai-besoin-d-aide",
   category: "Soutien et accompagnement psychologique",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Santé mentale : Comment en parler en toute décontraction ?' créée avec succès !"
 
-
 Ressource.create!(
   title: "La dépendance aux écrans : comment savoir si tu es accro ?",
   url: "#",
   category: "Bien-être numérique",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -112,7 +112,7 @@ Ressource.create!(
   title: "S'accepter comme on est : Le corps des filles et les normes de beauté",
   url: "#",
   category: "Image de soi et confiance",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -122,7 +122,7 @@ Ressource.create!(
   title: "Le harcèlement scolaire : comment le reconnaître et s'en sortir",
   url: "#",
   category: "Soutien contre le harcèlement",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -132,7 +132,7 @@ Ressource.create!(
   title: "Gérer le stress avant un examen : astuces pour rester calme et concentré",
   url: "#",
   category: "Stress et gestion des émotions",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -142,18 +142,17 @@ Ressource.create!(
   title: "Les réseaux sociaux et la santé mentale : comment préserver son bien-être en ligne ?",
   url: "#",
   category: "Bien-être numérique",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Les réseaux sociaux et la santé mentale : comment préserver son bien-être en ligne ?' créée avec succès !"
 
-
 Ressource.create!(
   title: "Qui est qui ? Trouve la bonne personne à consulter pour ta santé mentale",
   url: "https://www.nightline.fr/kit-de-vie/qui-est-qui",
   category: "Orientation et soutien",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -163,18 +162,17 @@ Ressource.create!(
   title: "Les signes de la dépression chez les adolescents : quand demander de l'aide ?",
   url: "#",
   category: "Prévention et soutien psychologique",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Les signes de la dépression chez les adolescents : quand demander de l'aide ?' créée avec succès !"
 
-
 Ressource.create!(
   title: "Prendre soin de son sommeil : pourquoi c'est essentiel pour la santé mentale ?",
   url: "#",
   category: "Sommeil et bien-être",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -184,7 +182,7 @@ Ressource.create!(
   title: "Comment parler de ses émotions sans honte ?",
   url: "#",
   category: "Communication et expression des émotions",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -194,7 +192,7 @@ Ressource.create!(
   title: "Les troubles alimentaires : comprendre les signes et se soutenir mutuellement",
   url: "#",
   category: "Image de soi et confiance",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -204,7 +202,7 @@ Ressource.create!(
   title: "La solitude et l'isolement social : conseils pour rester connecté(e) avec les autres",
   url: "#",
   category: "Soutien social et prévention de l'isolement",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -214,18 +212,17 @@ Ressource.create!(
   title: "L'impact de l'anxiété sociale : comment surmonter la peur du jugement ?",
   url: "#",
   category: "Gestion de l'anxiété",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'L'impact de l'anxiété sociale : comment surmonter la peur du jugement ?' créée avec succès !"
 
-
 Ressource.create!(
   title: "Vivre une rupture amoureuse : comment se reconstruire après la fin d'une relation ?",
   url: "#",
   category: "Relations et bien-être émotionnel",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -235,7 +232,7 @@ Ressource.create!(
   title: "Le deuil chez les jeunes : comprendre et traverser la perte d'un être cher",
   url: "#",
   category: "Soutien psychologique et deuil",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -245,41 +242,37 @@ Ressource.create!(
   title: "Le stress des examens : comment mieux gérer la pression et réussir sereinement ?",
   url: "#",
   category: "Stress et gestion des émotions",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Le stress des examens : comment mieux gérer la pression et réussir sereinement ?' créée avec succès !"
 
-
 Ressource.create!(
   title: "Santé PsyJeunes : Un site d'aide pour la santé mentale des jeunes",
   url: "https://www.santepsyjeunes.fr",
   category: "Soutien psychologique pour les jeunes",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Santé PsyJeunes : Un site d'aide pour la santé mentale des jeunes' créée avec succès !"
 
-
 Ressource.create!(
   title: "Le déclic pour consulter un psy : comment savoir qu'il est temps de demander de l'aide ?",
   url: "#",
   category: "Soutien psychologique et conseils pratiques",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Le déclic pour consulter un psy : comment savoir qu'il est temps de demander de l'aide ?' créée avec succès !"
 
-
-
 Ressource.create!(
   title: "Vaincre la peur de consulter : comment franchir le premier pas vers une meilleure santé mentale ?",
   url: "#",
   category: "Soutien psychologique et conseils pratiques",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -289,7 +282,7 @@ Ressource.create!(
   title: "Briser le silence : pourquoi il est essentiel de parler de ses difficultés psychologiques ?",
   url: "#",
   category: "Déstigmatisation et soutien social",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
@@ -299,53 +292,45 @@ Ressource.create!(
   title: "Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer",
   url: "#",
   category: "Témoignages et informations pratiques",
-  adress: nil,
+  address: nil,
   longitude: nil,
   latitude: nil
 )
 puts "Ressource 'Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer' créée avec succès !"
 
 # Ressources Près de chez moi
-puts" Création des ressources 'Près de chez moi'..."
+puts "Création des ressources 'Près de chez moi'..."
 
 Ressource.create!(
   title: "La Maison des Adolescents : Support et conseils",
   description: "La Maison des Ados (MDA) est un dispositif d’aide pour les jeunes. Elle propose un espace d’accueil pour les jeunes de 11 à 21 ans, avec un soutien éducatif, social, juridique et psychologique. C’est un endroit où tu peux trouver des réponses à tes questions.",
   url: "https://maisondesados-sdn.fr",
   category: "Près de chez moi",
-  adress: "1 Rue Saint-Génois, 59000 Lille",
-  longitude: 3.068283,
-  latitude: 50.635719
+  address: nil,
+  longitude: nil,
+  latitude: nil
 )
 puts "Ressource 'La Maison des Adolescents : Support et conseils' créée avec succès !"
-
-
 
 Ressource.create!(
   title: "EPSM - Centre Médico Psychologique Lille Nord (Secteur infanto-juvénile)",
   description: "Le CMP de Lille Nord propose des consultations de bilan et de suivi, avec des médecins pédopsychiatres et divers professionnels. Il offre des soins individuels (psychothérapie, psychomotricité, orthophonie), des thérapies familiales, ainsi que des ateliers thérapeutiques pour les enfants et leurs parents.",
   url: "https://www.santepsyjeunes.fr",
   category: "Près de chez moi",
-  adress: "7 rue du Nouveau Siècle, 59000 LILLE",
-  longitude: nil, # Longitude à ajouter si nécessaire
-  latitude: nil,  # Latitude à ajouter si nécessaire
-  phone_number: "03 20 21 94 50",
-  horaires: "Accès libre, contacter le CMP pour les horaires spécifiques."
+  address: nil,
+  longitude: nil,
+  latitude: nil
 )
 puts "Ressource 'EPSM - Centre Médico Psychologique Lille Nord (Secteur infanto-juvénile)' créée avec succès !"
-
-
 
 Ressource.create!(
   title: "Spiritek : Soutien pour jeunes confrontés à une addiction",
   description: "Spiritek est une structure dédiée aux jeunes confrontés à une addiction avec ou sans substance. Elle propose des consultations spécialisées pour aider à surmonter les difficultés liées à l'usage de substances ou à d'autres formes d'addiction.",
   url: "http://www.spiritek-asso.com/",
   category: "Près de chez moi",
-  adress: "49 rue du Molinel, 59000 Lille",
-  longitude: nil, # Longitude à ajouter si nécessaire
-  latitude: nil,  # Latitude à ajouter si nécessaire
-  phone_number: "03 28 36 28 40",
-  horaires: "Sur rendez-vous, nous contacter"
+  address: nil,
+  longitude: nil,
+  latitude: nil
 )
 puts "Ressource 'Spiritek : Soutien pour jeunes confrontés à une addiction' créée avec succès !"
 
@@ -353,29 +338,20 @@ Ressource.create!(
   title: "Cedragir (PAEJ) : Accueil et écoute pour les jeunes",
   description: "Cedragir (PAEJ) propose un espace d'écoute pour les jeunes, afin de les accompagner dans leurs difficultés personnelles, sociales, scolaires ou familiales. L'accès est facilité par les transports en commun (Métro ligne A et tram) et un parking réservé au public.",
   url: "https://www.arpade.org/point-ecoute/",
-  category: "Près de chez moi"
-  adress: "14 rue Alfred de Musset, 59000 Lille",
-  longitude: nil, # Longitude à ajouter si nécessaire
-  latitude: nil,  # Latitude à ajouter si nécessaire
-  phone_number: "320932121",
-  horaires: "Du Mardi au Vendredi de 14:00 à 18:00, avec ou sans rendez-vous. Possibilité d'être reçu sur rendez-vous à d'autres horaires."
+  category: "Près de chez moi",
+  address: nil,
+  longitude: nil,
+  latitude: nil
 )
 puts "Ressource 'Cedragir (PAEJ) : Accueil et écoute pour les jeunes' créée avec succès !"
 
-
 Ressource.create!(
   title: "CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites pour les étudiants",
-  description: "Le CROUS Lille Nord-Pas-de-Calais propose des consultations psychologiques gratuites lors des Happsy Hours. Ces consultations individuelles avec un psychologue sont offertes aux étudiants résidents du CROUS Lille Nord-Pas-de-Calais, en toute confidentialité.",
-  url: "https://www.crous-lille.fr", # Remplacer par l'URL correcte du CROUS s'il y en a une pour les Happsy Hours
-  category:"Près de chez moi",
-  adress: "Résidence Albert Châtelet, 4 rue Frédéric Combemale, 59000 Lille",
-  longitude: nil, # Longitude à ajouter si nécessaire
-  latitude: nil,  # Latitude à ajouter si nécessaire
-  phone_number: nil, # Pas de numéro de téléphone précisé
-  horaires: "Mardi de 18h à 21h, consultations avec ou sans rendez-vous"
+  description: "Le CROUS Lille Nord-Pas-de-Calais propose des consultations psychologiques gratuites lors des Happsy Hours. Ces consultations individuelles avec un psychologue sont offertes aux étudiants résidents du CROUS Lille Nord-Pas-de-Calais.",
+  url: "https://www.crous-lille.fr",
+  category: "Près de chez moi",
+  address: nil,
+  longitude: nil,
+  latitude: nil
 )
-puts "Ressource 'CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites' créée avec succès !"
-
-
-
-puts "Toutes les ressources ont été créées avec succès !"
+puts "Ressource 'CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites pour les étudiants' créée avec succès !"
