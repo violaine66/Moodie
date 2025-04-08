@@ -88,6 +88,17 @@ puts "JournalPost pour le 'jour d'aujourd'hui' créé avec succès !"
 puts "Création des ressources..."
 
 Ressource.create!(
+  title: "Santé mentale : Comment en parler en toute décontraction ?",
+  url: "https://www.santepsyjeunes.fr/j-ai-besoin-d-aide",
+  category: "Soutien et accompagnement psychologique",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Santé mentale : Comment en parler en toute décontraction ?' créée avec succès !"
+
+
+Ressource.create!(
   title: "La dépendance aux écrans : comment savoir si tu es accro ?",
   url: "#",
   category: "Bien-être numérique",
@@ -136,6 +147,17 @@ Ressource.create!(
   latitude: nil
 )
 puts "Ressource 'Les réseaux sociaux et la santé mentale : comment préserver son bien-être en ligne ?' créée avec succès !"
+
+
+Ressource.create!(
+  title: "Qui est qui ? Trouve la bonne personne à consulter pour ta santé mentale",
+  url: "https://www.nightline.fr/kit-de-vie/qui-est-qui",
+  category: "Orientation et soutien",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Qui est qui ? Trouve la bonne personne à consulter pour ta santé mentale' créée avec succès !"
 
 Ressource.create!(
   title: "Les signes de la dépression chez les adolescents : quand demander de l'aide ?",
@@ -229,6 +251,16 @@ Ressource.create!(
 )
 puts "Ressource 'Le stress des examens : comment mieux gérer la pression et réussir sereinement ?' créée avec succès !"
 
+
+Ressource.create!(
+  title: "Santé PsyJeunes : Un site d'aide pour la santé mentale des jeunes",
+  url: "https://www.santepsyjeunes.fr",
+  category: "Soutien psychologique pour les jeunes",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Santé PsyJeunes : Un site d'aide pour la santé mentale des jeunes' créée avec succès !"
 
 
 Ressource.create!(
