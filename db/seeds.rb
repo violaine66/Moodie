@@ -84,12 +84,11 @@ JournalPost.create!(
 puts "JournalPost pour le 'jour d'aujourd'hui' créé avec succès !"
 
 
-# Création de ressources
+# Création des ressources
 puts "Création des ressources..."
 
 Ressource.create!(
   title: "La dépendance aux écrans : comment savoir si tu es accro ?",
-
   url: "#",
   category: "Bien-être numérique",
   adress: nil,
@@ -100,7 +99,6 @@ puts "Ressource 'La dépendance aux écrans : comment savoir si tu es accro ?' c
 
 Ressource.create!(
   title: "S'accepter comme on est : Le corps des filles et les normes de beauté",
-
   url: "#",
   category: "Image de soi et confiance",
   adress: nil,
@@ -111,7 +109,6 @@ puts "Ressource 'S'accepter comme on est : Le corps des filles et les normes de 
 
 Ressource.create!(
   title: "Le harcèlement scolaire : comment le reconnaître et s'en sortir",
-
   url: "#",
   category: "Soutien contre le harcèlement",
   adress: nil,
@@ -121,37 +118,237 @@ Ressource.create!(
 puts "Ressource 'Le harcèlement scolaire : comment le reconnaître et s'en sortir' créée avec succès !"
 
 Ressource.create!(
-  title: "La Maison des Adolescents : Support et conseils",
-  description: "La Maison des Ados (MDA) est un dispositif d’aide pour les jeunes. Elle propose un espace d’accueil pour les jeunes de 11 à 21 ans, avec un soutien éducatif, social, juridique et psychologique. C’est un endroit où tu peux trouver des réponses à tes questions.",
-  url: "https://maisondesados-sdn.fr",
-  category: "Près de chez moi",
-  adress: "1 Rue Saint-Génois, 59000 Lille",
-  longitude: 3.068283,
-  latitude: 50.635719
-)
-puts "Ressource 'La Maison des Adolescents' créée avec succès !"
-
-Ressource.create!(
-  title: "Maison des Ados Paris : Un espace pour les jeunes",
-  description: "La Maison des Adolescents de Paris est un lieu d’accueil et de soutien pour les jeunes parisiens, abordant des sujets comme la santé, les relations familiales, les préoccupations scolaires, et bien d’autres thèmes. Un endroit où tu peux poser toutes tes questions.",
-  url: "https://robertdebre.aphp.fr/maison-des-adolescents/",
-  category: nil,
-  adress: "8 avenue de la Porte du Pré Saint-Gervais, 75019 Paris",
-  longitude: 2.401816,
-  latitude: 48.879460
-)
-puts "Ressource 'Maison des Ados Paris' créée avec succès !"
-
-Ressource.create!(
-  title: "L'Écoute Santé Jeunes : Un soutien pour ta santé mentale",
-  description: "L'Écoute Santé Jeunes est un site de soutien psychologique dédié aux jeunes. Il propose des conseils pratiques pour ceux qui traversent des périodes difficiles, comme de l’anxiété ou de la dépression. Si tu as besoin d’aide, c’est un excellent point de départ.",
-  url: "https://www.ecoute-sante-jeunes.org",
-  category: "Écoute et soutien",
+  title: "Gérer le stress avant un examen : astuces pour rester calme et concentré",
+  url: "#",
+  category: "Stress et gestion des émotions",
   adress: nil,
   longitude: nil,
   latitude: nil
 )
-puts "Ressource 'L'Écoute Santé Jeunes' créée avec succès !"
+puts "Ressource 'Gérer le stress avant un examen : astuces pour rester calme et concentré' créée avec succès !"
+
+Ressource.create!(
+  title: "Les réseaux sociaux et la santé mentale : comment préserver son bien-être en ligne ?",
+  url: "#",
+  category: "Bien-être numérique",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Les réseaux sociaux et la santé mentale : comment préserver son bien-être en ligne ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Les signes de la dépression chez les adolescents : quand demander de l'aide ?",
+  url: "#",
+  category: "Prévention et soutien psychologique",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Les signes de la dépression chez les adolescents : quand demander de l'aide ?' créée avec succès !"
+
+Ressource.create!(
+  title: "La pleine conscience pour les jeunes : comment l'intégrer dans sa routine ?",
+  url: "#",
+  category: "Relaxation et gestion du stress",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'La pleine conscience pour les jeunes : comment l'intégrer dans sa routine ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Prendre soin de son sommeil : pourquoi c'est essentiel pour la santé mentale ?",
+  url: "#",
+  category: "Sommeil et bien-être",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Prendre soin de son sommeil : pourquoi c'est essentiel pour la santé mentale ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Comment parler de ses émotions sans honte ?",
+  url: "#",
+  category: "Communication et expression des émotions",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Comment parler de ses émotions sans honte ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Les troubles alimentaires : comprendre les signes et se soutenir mutuellement",
+  url: "#",
+  category: "Image de soi et confiance",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Les troubles alimentaires : comprendre les signes et se soutenir mutuellement' créée avec succès !"
+
+Ressource.create!(
+  title: "La solitude et l'isolement social : conseils pour rester connecté(e) avec les autres",
+  url: "#",
+  category: "Soutien social et prévention de l'isolement",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'La solitude et l'isolement social : conseils pour rester connecté(e) avec les autres' créée avec succès !"
+
+Ressource.create!(
+  title: "L'impact de l'anxiété sociale : comment surmonter la peur du jugement ?",
+  url: "#",
+  category: "Gestion de l'anxiété",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'L'impact de l'anxiété sociale : comment surmonter la peur du jugement ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Construire des relations saines : reconnaître les comportements toxiques et se protéger",
+  url: "#",
+  category: "Relations et bien-être émotionnel",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Construire des relations saines : reconnaître les comportements toxiques et se protéger' créée avec succès !"
+
+Ressource.create!(
+  title: "Vivre une rupture amoureuse : comment se reconstruire après la fin d'une relation ?",
+  url: "#",
+  category: "Relations et bien-être émotionnel",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Vivre une rupture amoureuse : comment se reconstruire après la fin d'une relation ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Le deuil chez les jeunes : comprendre et traverser la perte d'un être cher",
+  url: "#",
+  category: "Soutien psychologique et deuil",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Le deuil chez les jeunes : comprendre et traverser la perte d'un être cher' créée avec succès !"
+
+Ressource.create!(
+  title: "Le stress des examens : comment mieux gérer la pression et réussir sereinement ?",
+  url: "#",
+  category: "Stress et gestion des émotions",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Le stress des examens : comment mieux gérer la pression et réussir sereinement ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Le tabou de la santé mentale : pourquoi en parler reste encore difficile ?",
+  url: "#",
+  category: "Sensibilisation et déstigmatisation",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Le tabou de la santé mentale : pourquoi en parler reste encore difficile ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Casser le tabou : pourquoi il est important de parler de ses problèmes de santé mentale ?",
+  url: "#",
+  category: "Sensibilisation et déstigmatisation",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Casser le tabou : pourquoi il est important de parler de ses problèmes de santé mentale ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Le déclic pour consulter un psy : comment savoir qu'il est temps de demander de l'aide ?",
+  url: "#",
+  category: "Soutien psychologique et conseils pratiques",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Le déclic pour consulter un psy : comment savoir qu'il est temps de demander de l'aide ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Se libérer du stigmate : comment ne plus avoir honte de consulter un professionnel ?",
+  url: "#",
+  category: "Déstigmatisation et empowerment",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Se libérer du stigmate : comment ne plus avoir honte de consulter un professionnel ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Les idées reçues sur les psychologues : démystifier la thérapie et comprendre ce qui se cache derrière",
+  url: "#",
+  category: "Sensibilisation et éducation",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Les idées reçues sur les psychologues : démystifier la thérapie et comprendre ce qui se cache derrière' créée avec succès !"
+
+Ressource.create!(
+  title: "Vaincre la peur de consulter : comment franchir le premier pas vers une meilleure santé mentale ?",
+  url: "#",
+  category: "Soutien psychologique et conseils pratiques",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Vaincre la peur de consulter : comment franchir le premier pas vers une meilleure santé mentale ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Briser le silence : pourquoi il est essentiel de parler de ses difficultés psychologiques ?",
+  url: "#",
+  category: "Déstigmatisation et soutien social",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Briser le silence : pourquoi il est essentiel de parler de ses difficultés psychologiques ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer",
+  url: "#",
+  category: "Témoignages et informations pratiques",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer' créée avec succès !"
+
+Ressource.create!(
+  title: "Le rôle du psychologue dans le bien-être mental des jeunes : quand faut-il consulter ?",
+  url: "#",
+  category: "Soutien psychologique et prévention",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Le rôle du psychologue dans le bien-être mental des jeunes : quand faut-il consulter ?' créée avec succès !"
+
+Ressource.create!(
+  title: "Distinguer la souffrance mentale normale de celle qui nécessite une aide professionnelle",
+  url: "#",
+  category: "Sensibilisation et gestion des émotions",
+  adress: nil,
+  longitude: nil,
+  latitude: nil
+)
+puts "Ressource 'Distinguer la souffrance mentale normale de celle qui nécessite une aide professionnelle' créée avec succès !"
+
+
+
 
 
 puts "Toutes les ressources ont été créées avec succès !"
