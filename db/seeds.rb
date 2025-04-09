@@ -36,49 +36,49 @@ puts "Utilisateur 'lou@app.fr' créé avec succès !"
 puts "Création des JournalPosts pour les 7 derniers jours..."
 
 JournalPost.create!(
-  date: Date.today - 6,
+  date: Date.today - 7,
   content: "Aujourd'hui, je me sens vraiment bien dans ma peau ! J’ai reçu une super note en anglais, et cela m’a donné un vrai coup de boost. Mes amis m'ont fait rire toute la journée avec leurs blagues, et j'ai eu des moments de complicité avec eux qui m'ont fait chaud au cœur. J’espère que cette bonne humeur va durer encore longtemps ! 😊💖",
   user: user
 )
 puts "JournalPost pour le 'jour -6' créé avec succès !"
 
 JournalPost.create!(
-  date: Date.today - 5,
+  date: Date.today - 6,
   content: "Je suis un peu stressée pour l’examen de maths qui a lieu demain. J’ai révisé toute la journée, mais je n’arrive pas à m’enlever cette petite angoisse du ventre. J’espère vraiment que ça va bien se passer, mais c’est difficile de se calmer. En tout cas, je vais essayer de me détendre ce soir en écoutant un peu de musique relaxante. 📚😰",
   user: user
 )
 puts "JournalPost pour le 'jour -5' créé avec succès !"
 
 JournalPost.create!(
-  date: Date.today - 4,
+  date: Date.today - 5,
   content: "Aujourd'hui, c’était une journée assez déprimante. Il pleut à verse et je n’ai pas vraiment envie de sortir de chez moi. L’ambiance est un peu morose, et je me sens un peu triste, comme si le ciel reflétait mon humeur. Je me suis blottie sous ma couette, en écoutant de la musique mélancolique, en espérant que demain serait un meilleur jour. 🌧️🎶",
   user: user
 )
 puts "JournalPost pour le 'jour -4' créé avec succès !"
 
 JournalPost.create!(
-  date: Date.today - 3,
+  date: Date.today - 4,
   content: "Je suis tellement contente ! J’ai eu l’occasion de parler à mon crush aujourd'hui, et c’était super. Il m’a souri, et ce petit sourire a illuminé ma journée ! Je crois que j’ai un peu rougi, mais c’était trop mignon. C’est fou comme les petites choses peuvent rendre une journée tellement meilleure. 😍💕",
   user: user
 )
 puts "JournalPost pour le 'jour -3' créé avec succès !"
 
 JournalPost.create!(
-  date: Date.today - 2,
+  date: Date.today - 3,
   content: "Je me sens un peu seule aujourd’hui, je n’arrive pas vraiment à savoir pourquoi. J’ai passé la journée à réfléchir, peut-être un peu trop d’ailleurs. Je me suis demandée si je n’étais pas en train de m’inventer des problèmes. J’espère que ce sentiment passera bientôt. 😔",
   user: user
 )
 puts "JournalPost pour le 'jour -2' créé avec succès !"
 
 JournalPost.create!(
-  date: Date.today - 1,
+  date: Date.today - 2,
   content: "Aujourd’hui, j’ai eu une grosse dispute avec ma meilleure amie, et c’était vraiment difficile. On s’est mal comprises, et ça m’a fait du mal. J’espère qu’on pourra en parler demain, que tout va s’arranger. J’ai l’impression qu’il y a quelque chose de plus derrière cette dispute, mais je ne sais pas encore quoi. 😢💔",
   user: user
 )
 puts "JournalPost pour le 'jour -1' créé avec succès !"
 
 JournalPost.create!(
-  date: Date.today,
+  date: Date.today - 1,
   content: "Enfin, des bonnes nouvelles ! Ma meilleure amie et moi, on s’est réconciliées aujourd’hui. C’était un moment très émouvant, on s’est parlé, et on a clarifié nos malentendus. Pour fêter ça, on a mangé une glace ensemble et rigolé comme avant. Tout est bien qui finit bien, et je me sens tellement mieux maintenant. 🍦💛",
   user: user
 )
