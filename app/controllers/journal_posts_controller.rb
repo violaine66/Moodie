@@ -1,7 +1,7 @@
 class JournalPostsController < ApplicationController
   before_action :authenticate_user!
   def index
-    @journal_posts = JournalPost.all
+    @journal_posts = JournalPost.order(date: :desc)
     @moods = Mood.all.group_by(&:date)
     @last_moods = @moods.transform_values do |moods|
       moods.sort_by(&:created_at).last
