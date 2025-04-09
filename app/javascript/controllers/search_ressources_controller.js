@@ -12,4 +12,7 @@ export default class extends Controller {
         this.listTarget.outerHTML = data
       })
   }
+  clearSearch() {
+    this.inputTarget.value = '';  // Efface la valeur de l'input
+  }
 }
