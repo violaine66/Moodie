@@ -22,8 +22,8 @@
 
       <div class="card mx-4 mb-3 align-items-center d-flex flex-column" id="search-card">
         <div class="card-body">
-          <h5 class="card-title"><strong>Près de chez moi</strong></h5>
-          <%= form_with url: pres_de_chez_moi_ressources_path, method: :get do |f|%>
+          <span class="card-title"><strong>Près de chez moi</strong></span>
+          <%= form_with url: pres_de_chez_moi_ressources_path, class:"mt-3", method: :get do |f|%>
             <div class="d-flex gap-2 align-items-center">
               <%= f.text_field :adress, class: "form-control bg-white" %>
               <%= f.submit "Rechercher", class: "btn btn-outline-dark btn-sm bg-white text-dark fw-bold shadow-sm w-auto" %>
