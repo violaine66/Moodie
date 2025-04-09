@@ -307,10 +307,9 @@ Ressource.create!(
   url: "https://maisondesados-sdn.fr",
   category: "Près de chez moi",
   adress: "1 Rue Saint-Génois, 59000 Lille",
-  longitude: nil,
-  latitude: nil
+  longitude: 3.062219,
+  latitude: 50.633215
 )
-puts "Ressource 'La Maison des Adolescents : Support et conseils' créée avec succès !"
 
 Ressource.create!(
   title: "EPSM - Centre Médico Psychologique Lille Nord (Secteur infanto-juvénile)",
@@ -318,10 +317,9 @@ Ressource.create!(
   url: "https://www.santepsyjeunes.fr",
   category: "Près de chez moi",
   adress: "7 rue du Nouveau Siècle, 59000 LILLE",
-  longitude: nil,
-  latitude: nil
+  longitude: 3.063514,
+  latitude: 50.638510
 )
-puts "Ressource 'EPSM - Centre Médico Psychologique Lille Nord (Secteur infanto-juvénile)' créée avec succès !"
 
 Ressource.create!(
   title: "Spiritek : Soutien pour jeunes confrontés à une addiction",
@@ -329,10 +327,9 @@ Ressource.create!(
   url: "http://www.spiritek-asso.com/",
   category: "Près de chez moi",
   adress: "49 rue du Molinel, 59000 Lille",
-  longitude: nil,
-  latitude: nil
+  longitude: 3.073027,
+  latitude: 50.639915
 )
-puts "Ressource 'Spiritek : Soutien pour jeunes confrontés à une addiction' créée avec succès !"
 
 Ressource.create!(
   title: "Cedragir (PAEJ) : Accueil et écoute pour les jeunes",
@@ -340,10 +337,9 @@ Ressource.create!(
   url: "https://www.arpade.org/point-ecoute/",
   category: "Près de chez moi",
   adress: "14 rue Alfred de Musset, 59000 Lille",
-  longitude: nil,
-  latitude: nil
+  longitude: 3.067249,
+  latitude: 50.633986
 )
-puts "Ressource 'Cedragir (PAEJ) : Accueil et écoute pour les jeunes' créée avec succès !"
 
 Ressource.create!(
   title: "CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites pour les étudiants",
@@ -351,7 +347,7 @@ Ressource.create!(
   url: "https://www.crous-lille.fr",
   category: "Près de chez moi",
   adress: "Résidence Albert Châtelet, 4 rue Frédéric Combemale, 59000 Lille",
-  longitude: nil,
-  latitude: nil
+  longitude: 3.074453,
+  latitude: 50.626740
 )
-puts "Ressource 'CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites pour les étudiants' créée avec succès !"
+puts "Ressources 'Près de chez moi' créées avec succès !"
