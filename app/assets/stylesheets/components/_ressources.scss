@@ -24,6 +24,21 @@
   text-align: center;
   margin: 0 auto;
 }
+
+.retour {
+  background-color:rgb(127, 162, 182);
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.retour:hover {
+  background-color: rgb(127, 162, 182);
+  color: white;
+}
+
 @media (max-width: 768px) {
   .title-ressources {
     font-size: 2rem; /* Réduit la taille du titre sur les petits écrans */
