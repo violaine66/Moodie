@@ -129,14 +129,14 @@ Ressource.create!(
 puts "Ressource 'Le harcèlement scolaire : comment le reconnaître et s'en sortir' créée avec succès !"
 
 Ressource.create!(
-  title: "Gérer le stress avant un examen : astuces pour rester calme et concentré",
+  title: "Gérer le stress avant un examen, astuces pour rester calme et concentré",
   url: "#",
   category: "Stress et gestion des émotions",
   adress: nil,
   longitude: nil,
   latitude: nil
 )
-puts "Ressource 'Gérer le stress avant un examen : astuces pour rester calme et concentré' créée avec succès !"
+puts "Ressource 'Gérer le stress avant un examen, astuces pour rester calme et concentré' créée avec succès !"
 
 Ressource.create!(
   title: "Les réseaux sociaux et la santé mentale : comment préserver son bien-être en ligne ?",
@@ -239,16 +239,6 @@ Ressource.create!(
 puts "Ressource 'Le deuil chez les jeunes : comprendre et traverser la perte d'un être cher' créée avec succès !"
 
 Ressource.create!(
-  title: "Le stress des examens : comment mieux gérer la pression et réussir sereinement ?",
-  url: "#",
-  category: "Stress et gestion des émotions",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Le stress des examens : comment mieux gérer la pression et réussir sereinement ?' créée avec succès !"
-
-Ressource.create!(
   title: "Santé PsyJeunes : Un site d'aide pour la santé mentale des jeunes",
   url: "https://www.santepsyjeunes.fr",
   category: "Soutien psychologique pour les jeunes",
@@ -278,15 +268,6 @@ Ressource.create!(
 )
 puts "Ressource 'Vaincre la peur de consulter : comment franchir le premier pas vers une meilleure santé mentale ?' créée avec succès !"
 
-Ressource.create!(
-  title: "Briser le silence : pourquoi il est essentiel de parler de ses difficultés psychologiques ?",
-  url: "#",
-  category: "Déstigmatisation et soutien social",
-  adress: nil,
-  longitude: nil,
-  latitude: nil
-)
-puts "Ressource 'Briser le silence : pourquoi il est essentiel de parler de ses difficultés psychologiques ?' créée avec succès !"
 
 Ressource.create!(
   title: "Comment le soutien psychologique peut améliorer ta vie : témoignages et conseils pour commencer",
@@ -348,5 +329,38 @@ Ressource.create!(
   adress: "Résidence Albert Châtelet, 4 rue Frédéric Combemale, 59000 Lille",
   longitude: 3.074453,
   latitude: 50.626740
+)
+puts "Ressources 'Près de chez moi' créées avec succès !"
+
+Ressource.create!(
+  title: "Maison des Adolescents et des Jeunes Adultes des Pyrénées Orientales",
+  description: "La Maison des Adolescents et des Jeunes Adultes des Pyrénées Orientales à Perpignan offre un accompagnement pour les jeunes de 12 à 25 ans. Ils proposent des services d'écoute, d'accompagnement psychologique et social.",
+  url: "https://mda66.fr/",
+  category: "Près de chez moi",
+  adress: "37 avenue Alfred Sauvy, 66100 Perpignan",
+  longitude: 2.895595,  # Vous pouvez ajuster la longitude avec les coordonnées exactes si nécessaires
+  latitude: 42.699953  # Vous pouvez ajuster la latitude avec les coordonnées exactes si nécessaires
+)
+puts "Ressources 'Près de chez moi' créées avec succès !"
+
+Ressource.create!(
+  title: "Paej Adovivre de l'ADSEA 66",
+  description: "Le Paej Adovivre de l'ADSEA 66 propose un accueil et une écoute pour les jeunes de 12 à 25 ans. Il offre des services d'accompagnement psychologique, social et administratif.",
+  url: "http://www.adsea66.fr/",
+  category: "Près de chez moi",
+  adress: "10 Rue des Carignans, 66000 Perpignan",
+  longitude: 2.892086,  # Coordonnées géographiques approximatives, à ajuster si nécessaire
+  latitude: 42.698152  # Coordonnées géographiques approximatives, à ajuster si nécessaire
+)
+puts "Ressources 'Près de chez moi' créées avec succès !"
+
+Ressource.create!(
+  title: "CSAPA ANPAA",
+  description: "Le CSAPA ANPAA propose des consultations pour les personnes confrontées à une addiction avec ou sans substance. Ce centre offre un accompagnement spécialisé pour les jeunes et les adultes.",
+  url: "http://www.anpaa66.fr/ANPAA/Accueil.html",
+  category: "Près de chez moi",
+  adress: "37 boulevard Kennedy, 66100 Perpignan, Immeuble Le Marylin",
+  longitude: 2.894351,  # Coordonnées géographiques approximatives, à ajuster si nécessaire
+  latitude: 42.688151  # Coordonnées géographiques approximatives, à ajuster si nécessaire
 )
 puts "Ressources 'Près de chez moi' créées avec succès !"
