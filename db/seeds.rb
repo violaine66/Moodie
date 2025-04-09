@@ -340,7 +340,6 @@ Ressource.create!(
   longitude: 3.067249,
   latitude: 50.633986
 )
-
 Ressource.create!(
   title: "CROUS Lille Nord-Pas-de-Calais : Happsy Hours – Consultations psychologiques gratuites pour les étudiants",
   description: "Le CROUS Lille Nord-Pas-de-Calais propose des consultations psychologiques gratuites lors des Happsy Hours. Ces consultations individuelles avec un psychologue sont offertes aux étudiants résidents du CROUS Lille Nord-Pas-de-Calais.",
