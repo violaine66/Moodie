@@ -8,7 +8,7 @@
                     "Chercher un article...", value: params[:query],
                     data: {
                       search_ressources_target: "input",
-                      action: "keyup->search-ressources#update"
+                      action: "keyup->search-ressources#update click->search-ressources#clearSearch"
                     } %>
         <% end %>
       </div>
