@@ -5,6 +5,10 @@
   padding: 5px;
 }
 
+.card-title {
+  font-size: 17px;
+}
+
 .ressources-container {
   margin-top: 85px;
   padding-bottom: 85px;
@@ -23,6 +27,7 @@
   width: 550px;
   text-align: center;
   margin: 0 auto;
+  font-size: 17px;
 }
 
 .retour {
@@ -48,6 +53,10 @@
 
 .ressources-input {
   border-radius: 20px;
+}
+
+#btn-ressource {
+  border-radius: 4px;
 }
 
 #search-card {

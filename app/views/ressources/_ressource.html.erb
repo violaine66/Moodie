@@ -10,9 +10,9 @@
         <% end %>
       </p>
       <% if not ressource.longitude.nil? && ressource.latitude.nil? %>
-        <%= link_to "Contacter", ressource.url, class: "btn btn-outline-dark bg-white text-dark border-dark fw-bold shadow w-auto", target: "_blank" %>
+        <%= link_to "Contacter", ressource.url, class: "btn btn-outline-dark bg-white text-dark border-dark fw-bold shadow w-auto", id:"btn-ressource", target: "_blank" %>
       <% else %>
-        <%= link_to "Voir l'article", ressource.url, class: "btn btn-outline-dark bg-white text-dark border-dark fw-bold shadow w-auto", target: "_blank" %>
+        <%= link_to "Voir l'article", ressource.url, class: "btn btn-outline-dark bg-white text-dark border-dark fw-bold shadow w-auto", id:"btn-ressource",  target: "_blank" %>
       <% end %>
     </div>
   </div>
