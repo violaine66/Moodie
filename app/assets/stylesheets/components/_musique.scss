@@ -76,15 +76,9 @@
 
   }
   .relaxation {
-    // padding: 10px;
-    // border-radius: 20px;
     font-size: 17px;
     font-weight: bold;
-    // background-color: #7FA2B6;
-    // opacity: 0.9;
     color: #7FA2B6;
-    // height: 60px;
-    // width: 100px;
     margin-top: 60px;
     margin-bottom: 1px;
     text-align: center;
@@ -120,4 +114,16 @@
   text-decoration: none;
   color: black;
   align-self: center;
+}
+.modal-header {
+  background-color:#7FA2B6 ;
+}
+
+.modal-title {
+  font-weight: bolder;
+  color: white;
+  margin-left: 70px;
+}
+.modal-body {
+  background-color: rgb(251, 192, 178);
 }
